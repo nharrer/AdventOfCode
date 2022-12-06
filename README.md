@@ -1,3 +1,3 @@
-# Advent of Code 2022
+# Advent of Code
 
-Solutions for [Advent of Code 2022](https://adventofcode.com/2022) in Typescript running in [Deno](https://deno.land/).
+Solutions for [Advent of Code](https://adventofcode.com/) in Typescript running in [Deno](https://deno.land/).
