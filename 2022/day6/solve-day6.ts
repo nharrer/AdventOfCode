@@ -1,4 +1,4 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 function detectPrefix(line: string, len: number) {
     const window = [];
@@ -18,7 +18,7 @@ function detectPrefix(line: string, len: number) {
 }
 
 const file = await Deno.open('input.txt');
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     console.log(`Part 1: ${detectPrefix(line, 4)}`);
     console.log(`Part 2: ${detectPrefix(line, 14)}`);
 }

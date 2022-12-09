@@ -1,8 +1,8 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const m: number[][] = [];
 const file = await Deno.open('input.txt');
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     const row = line.split('').map(x => +x);
     m.push(row);
 }

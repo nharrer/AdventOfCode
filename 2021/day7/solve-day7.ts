@@ -1,10 +1,10 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const INPUT_FILE = 'input.txt';
 
 const subs: Array<number> = [];
 const file = await Deno.open(INPUT_FILE);
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     subs.push(...line.split(',').map(x => +x));
 }
 

@@ -1,4 +1,4 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const SIZE_OF_INTEREST = 100000;
 const DISKSIZE = 70000000;
@@ -8,7 +8,7 @@ let currentDir = [''];
 const dirSize: Map<string, number> = new Map();
 
 const file = await Deno.open('input.txt');
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     if (line.startsWith('$ ls')) {
         continue;
     } else if (line.startsWith('$ cd')) {

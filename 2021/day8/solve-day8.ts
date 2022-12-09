@@ -1,12 +1,12 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
 import { Superset } from "https://deno.land/x/supersets@1.1.3/mod.ts";
+import { readLines } from "../../import.ts";
 
 const INPUT_FILE = 'input.txt';
 
 let sum1 = 0;
 let sum2 = 0;
 const file = await Deno.open(INPUT_FILE);
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     const [part1, part2] = line.split(' | ');
     const sdigits1 = part1.split(' ');
     const sdigits2 = part2.split(' ');

@@ -1,11 +1,11 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 let sum = 0;
 let calArray = [];
 const regex = new RegExp('^[0-9]+$');
 
 const file = await Deno.open('input.txt');
-for await(const line of bufio.readLines(file)) {
+for await(const line of readLines(file)) {
     if (!regex.test(line)) {
         calArray.push(sum);
         sum = 0;

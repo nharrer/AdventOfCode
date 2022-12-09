@@ -1,4 +1,4 @@
-import { readLines } from "https://deno.land/std@0.167.0/io/mod.ts";
+import { readLines } from "../../import.ts";
 
 const INPUT_FILE = 'input.txt';
 const KNOTS = 10;

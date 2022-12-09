@@ -1,4 +1,4 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 let nr_inc1 = 0;
 let nr_inc2 = 0;
@@ -7,7 +7,7 @@ let last2 = -1;
 
 const file = await Deno.open('input.txt');
 const window: Array<number> = [];
-for await(const line of bufio.readLines(file)) {
+for await(const line of readLines(file)) {
     const n1 = +line;
     if (last1 >= 0 && n1 > last1) {
         nr_inc1++;

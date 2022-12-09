@@ -1,4 +1,4 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const re = new RegExp('^(\\w+) (\\d+)$');
 
@@ -9,7 +9,7 @@ let position2 = 0;
 let aim2 = 0;
 
 const file = await Deno.open('input.txt');
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     const match = line.match(re);
     if (match) {
         const dir = match[1];

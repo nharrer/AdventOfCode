@@ -1,11 +1,11 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const regexMoves = new RegExp('^move ([0-9]+) from ([0-9]+) to ([0-9]+)$');
 const stacks1: Array<Array<string>> = [];
 const stacks2: Array<Array<string>> = [];
 
 const file = await Deno.open('input.txt');
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     if (line.includes('[')) {
         let a = line.split('');
         let s = 0;

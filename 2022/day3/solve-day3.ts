@@ -1,4 +1,4 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const asciiA = 'A'.charCodeAt(0);
 const asciia = 'a'.charCodeAt(0);
@@ -8,7 +8,7 @@ let sum1 = 0;
 let sum2 = 0;
 
 const file = await Deno.open('input.txt');
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     const array = line.split('').map(x => x.charCodeAt(0)).map(x => x < asciia ? x - asciiA + 27 : x - asciia + 1);
 
     const b = Object.assign([], array); // clone array

@@ -1,4 +1,4 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const INPUT_FILE = 'input.txt';
 
@@ -13,7 +13,7 @@ const points1: Map<string, number> = new Map();
 const points2: Map<string, number> = new Map();
 
 const file = await Deno.open(INPUT_FILE);
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     const match = line.match(re);
     if (match) {
         const x1 = +match[1];

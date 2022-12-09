@@ -1,4 +1,4 @@
-import { bufio } from "https://deno.land/x/aoc@0.0.1-alpha.11/deps.ts";
+import { readLines } from "../../import.ts";
 
 const arrayToNumber = (a: Array<number>): number => {
     let i = 0;
@@ -17,7 +17,7 @@ const mostCommonBitAt = (codes: Array<Array<number>>, position: number): number 
 
 const codes: Array<Array<number>> = [];
 const file = await Deno.open('input.txt');
-for await (const line of bufio.readLines(file)) {
+for await (const line of readLines(file)) {
     const p = line.split('');
     const code = p.map(x => +x);
     codes.push(code);
