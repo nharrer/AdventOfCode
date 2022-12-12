@@ -7,7 +7,7 @@
         {
             "request": "launch",
             "name": "Launch Program",
-            "type": "pwa-node",
+            "type": "node",
             "program": "${file}",
             "cwd": "${fileDirname}",
             "runtimeExecutable": "/home/norbert/.deno/bin/deno",
