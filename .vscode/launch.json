@@ -12,11 +12,8 @@
             "cwd": "${fileDirname}",
             "runtimeExecutable": "/home/norbert/.deno/bin/deno",
             "runtimeArgs": [
-                "run",
-                "--inspect-brk",
-                "--allow-all"
-            ],
-            "attachSimplePort": 9229
+                "run"
+            ]
         }
     ]
 }
