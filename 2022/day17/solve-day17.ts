@@ -44,7 +44,7 @@ class Rock {
         this.width = this.shape[0].length;
         this.height = this.shape.length;
     }
-    public move(x: number, y: number) {
+    public move(x: number, y: number): void {
         this.hpos += x;
         this.vpos += y;
         if (this.hpos < 0) {
