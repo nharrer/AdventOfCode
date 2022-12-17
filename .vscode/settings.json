@@ -1,3 +1,11 @@
 {
-    "deno.enable": true
+    "deno.enable": true,
+    "deno.inlayHints.enumMemberValues.enabled": true,
+    "deno.inlayHints.functionLikeReturnTypes.enabled": true,
+    "deno.inlayHints.parameterNames.enabled": "none",
+    "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "deno.inlayHints.parameterTypes.enabled": false,
+    "deno.inlayHints.propertyDeclarationTypes.enabled": false,
+    "deno.inlayHints.variableTypes.enabled": false,
+    "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false
 }
