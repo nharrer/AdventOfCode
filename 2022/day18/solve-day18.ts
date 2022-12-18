@@ -10,20 +10,9 @@ class Cube {
     ) {
     }
     public filler = false;
-    public xp: Cube | null = null;
-    public xm: Cube | null = null;
-    public yp: Cube | null = null;
-    public ym: Cube | null = null;
-    public zp: Cube | null = null;
-    public zm: Cube | null = null;
+    public neighbors: Array<[Cube | null, Cube | null]> = [[null, null], [null, null], [null, null]];
     public get openfaces(): number {
-        return 0 +
-            (this.xp === null ? 1 : 0) +
-            (this.xm === null ? 1 : 0) +
-            (this.yp === null ? 1 : 0) +
-            (this.ym === null ? 1 : 0) +
-            (this.zp === null ? 1 : 0) +
-            (this.zm === null ? 1 : 0);
+        return this.neighbors.reduce((sum, n) => sum + (n[0] === null ? 1 : 0) + (n[1] === null ? 1 : 0), 0);
     }
 }
 
@@ -33,35 +22,18 @@ const getCoords = (x: number, y: number, z: number): string => `${x},${y},${z}`;
 
 const connect = (cube: Cube): void => {
     const [x, y, z] = [cube.x, cube.y, cube.z];
-    for (const d of [-1, 1]) {
-        const cubex = cubes.get(getCoords(x + d, y, z));
-        if (cubex) {
-            if (d < 0) {
-                cubex.xp = cube;
-                cube.xm = cubex;
-            } else {
-                cubex.xm = cube;
-                cube.xp = cubex;
-            }
-        }
-        const cubey = cubes.get(getCoords(x, y + d, z));
-        if (cubey) {
-            if (d < 0) {
-                cubey.yp = cube;
-                cube.ym = cubey;
-            } else {
-                cubey.ym = cube;
-                cube.yp = cubey;
-            }
-        }
-        const cubez = cubes.get(getCoords(x, y, z + d));
-        if (cubez) {
-            if (d < 0) {
-                cubez.zp = cube;
-                cube.zm = cubez;
-            } else {
-                cubez.zm = cube;
-                cube.zp = cubez;
+    for (const dimension of [0, 1, 2]) {
+        for (const dir of [-1, 1]) {
+            const dd = [dimension === 0 ? 1 : 0, dimension === 1 ? 1 : 0, dimension === 2 ? 1 : 0];
+            const cube2 = cubes.get(getCoords(x + dir * dd[0], y + dir * dd[1], z + dir * dd[2]));
+            if (cube2) {
+                if (dir < 0) {
+                    cube2.neighbors[dimension][1] = cube;
+                    cube.neighbors[dimension][0] = cube2;
+                } else {
+                    cube2.neighbors[dimension][0] = cube;
+                    cube.neighbors[dimension][1] = cube2;
+                }
             }
         }
     }
@@ -80,10 +52,10 @@ const fill = (): void => {
                 cf.filler = true;
                 connect(cf);
                 cubes.set(coords, cf);
-                for (const d of [-1, 1]) {
-                    queue.push([x + d, y, z]);
-                    queue.push([x, y + d, z]);
-                    queue.push([x, y, z + d]);
+                for (const dir of [-1, 1]) {
+                    queue.push([x + dir, y, z]);
+                    queue.push([x, y + dir, z]);
+                    queue.push([x, y, z + dir]);
                 }
             }
         }
@@ -113,24 +85,6 @@ for await (const line of readLines(file)) {
 xmax += 1; xmin -= 1;
 ymax += 1; ymin -= 1;
 zmax += 1; zmin -= 1;
-
-const dump = (): void => {
-    for (let z = zmin; z <= zmax; z++) {
-        console.log(`z: ${z}`);
-        for (let y = ymin; y <= ymax; y++) {
-            let s = '';
-            for (let x = xmin; x <= xmax; x++) {
-                const cube = cubes.get(getCoords(x, y, z))
-                let c = '.';
-                if (cube) {
-                    c = cube.filler ? '@' : '#';
-                }
-                s += c;
-            }
-            console.log(String(y).padStart(3, '0'), s);
-        }
-    }
-}
 
 const dumpMinecraft = async (): Promise<void> => {
     // deno-lint-ignore no-explicit-any
