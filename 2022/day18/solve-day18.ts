@@ -101,20 +101,79 @@ for await (const line of readLines(file)) {
     const [x, y, z] = line.split(',').map(p => +p);
     const coords = getCoords(x, y, z);
     const cube = new Cube(x, y, z);
+    connect(cube);
+    cubes.set(coords, cube);
     xmin = Math.min(x, xmin);
     xmax = Math.max(x, xmax);
     ymin = Math.min(y, ymin);
     ymax = Math.max(y, ymax);
     zmin = Math.min(z, zmin);
     zmax = Math.max(z, zmax);
-    connect(cube);
-    cubes.set(coords, cube);
 }
 xmax += 1; xmin -= 1;
 ymax += 1; ymin -= 1;
 zmax += 1; zmin -= 1;
 
+const dump = (): void => {
+    for (let z = zmin; z <= zmax; z++) {
+        console.log(`z: ${z}`);
+        for (let y = ymin; y <= ymax; y++) {
+            let s = '';
+            for (let x = xmin; x <= xmax; x++) {
+                const cube = cubes.get(getCoords(x, y, z))
+                let c = '.';
+                if (cube) {
+                    c = cube.filler ? '@' : '#';
+                }
+                s += c;
+            }
+            console.log(String(y).padStart(3, '0'), s);
+        }
+    }
+}
+
+const dumpMinecraft = async (): Promise<void> => {
+    // deno-lint-ignore no-explicit-any
+    const objects: Array<any> = [];
+    cubes.forEach(cube => {
+        let istop = true;
+        for (let z = cube.z + 1; z <= zmax; z++) {
+            if (cubes.get(getCoords(cube.x, cube.y, z))) {
+                istop = false;
+                break;
+            }
+        }
+
+        const coords = [(cube.x - 11) * 16, (cube.z - 11) * 16, (cube.y - 11) * 16];
+        let model = 'dirt';
+        if (istop) {
+            model = 'grass_block';
+        } else if (Math.random() < 0.05) {
+            model = 'iron_ore';
+        } else if (Math.random() < (0.005 * (20 - cube.z))) {
+            model = 'gold_ore';
+        } else {
+            if (cube.z < 10) {
+                model = 'cobblestone';
+            } else if (cube.z < 15) {
+                model = 'stone';
+            }
+        }
+
+        objects.push({
+            type: 'block',
+            model: model,
+            offset: coords
+        });
+    });
+
+    const filename = './minecraft.js';
+    await Deno.writeTextFile(filename, 'var objects = ' + JSON.stringify(objects) + ';');
+}
+
 const solution1 = Array.from(cubes.values()).filter(c => !c.filler).reduce((sum, c): number => sum + c.openfaces, 0);
+await dumpMinecraft();
+
 fill();
 const solution2 = solution1 - Array.from(cubes.values()).filter(c => !c.filler).reduce((sum, c): number => sum + c.openfaces, 0);
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js" integrity="sha256-NGC9JEuTWN4GhTj091wctgjzftr+8WNDmw0H8J5YPYE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/InventivetalentDev/MineRender@1.4.6/dist/entity.min.js"></script>
+    <script src="./minecraft.js"></script>
+    <style>
+        body {
+        }
+        #viewContainer {
+            width: 100%;
+            background:url(./background.jpg);
+            background-size: cover;
+        }
+        iframe {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="viewContainer">
+
+    </div>
+    <iframe src="https://minerender.org/embed/model/?models=block/stone&shadow=true" frameborder="0"></iframe>
+    <!-- <iframe src="https://minerender.org/embed/model/?models=block/mossy_stone_bricks&shadow=true" frameborder="0"></iframe>
+    <iframe src="https://minerender.org/embed/skin/?skin=inventivetalent&shadow=true" frameborder="0"></iframe> -->
+
+    <script>
+        var modelRender = new ModelRender({
+            autoResize: true,
+            showGrid: false,
+            camera: { type: "perspective", x: 200, y: 200, z: 200, target: [0, 0, 0] }
+        }, document.getElementById("viewContainer"));
+        modelRender.render(objects);
+    </script>
+</body>
+
+</html>
