@@ -1,11 +1,14 @@
 {
     "deno.enable": true,
-    "deno.inlayHints.enumMemberValues.enabled": true,
-    "deno.inlayHints.functionLikeReturnTypes.enabled": true,
-    "deno.inlayHints.parameterNames.enabled": "none",
-    "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
-    "deno.inlayHints.parameterTypes.enabled": false,
-    "deno.inlayHints.propertyDeclarationTypes.enabled": false,
-    "deno.inlayHints.variableTypes.enabled": false,
-    "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "none",
+    "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "typescript.inlayHints.parameterTypes.enabled": false,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+    "typescript.inlayHints.variableTypes.enabled": false,
+    "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+    "[python]": {
+        "editor.formatOnSave": true,
+    }
 }

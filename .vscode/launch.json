@@ -5,8 +5,8 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Deno: Current File",
             "request": "launch",
-            "name": "Launch Program",
             "type": "node",
             "program": "${file}",
             "cwd": "${fileDirname}",
@@ -14,6 +14,15 @@
             "runtimeArgs": [
                 "run"
             ]
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "console": "internalConsole",
+            "justMyCode": true
         }
     ]
 }

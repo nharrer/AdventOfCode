@@ -1,0 +1,9 @@
+[tool.ruff]
+extend-select = ["B", "Q", "PL"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.format]
+quote-style = "single"
