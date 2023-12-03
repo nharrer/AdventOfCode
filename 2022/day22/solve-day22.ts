@@ -169,7 +169,7 @@ console.log(`Solution 1: ${walk()}`);
 
 // ------- Solution 2 -------
 
-// Fix the boundaries accourding to a cube.
+// Fix the boundaries according to a cube.
 // I am sure there is a better, more general way to do this, but I am too lazy to think about it.
 // NOTE: This probably only works for my input.
 
