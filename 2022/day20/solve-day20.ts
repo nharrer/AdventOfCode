@@ -1,94 +1,54 @@
 import { readLines } from "../../import.ts";
 
 const INPUT_FILE = 'input.txt';
+const DKEY = 811589153;
+const MIXINGS = 10;
 
 class Number {
-    constructor(public value: number, public prev?: Number, public next?: Number) {
-    }
-
-    toString(): string {
-        return this.value.toString();
+    constructor(public value: number) {
     }
 }
 
-function move(start: Number): void {
-    let steps = start.value;
-    if (steps === 0) {
-        return;
+const move = (list: Array<Number>, n: Number): void => {
+    if (n.value !== 0) {
+        let pos = list.indexOf(n);
+        // remove n from list
+        list.splice(pos, 1);
+        pos = pos + n.value;
+        pos = pos % list.length;
+        // insert n at new position
+        list.splice(pos, 0, n);
     }
-    const dir = Math.sign(steps);
-    // remove current
-    start.prev!.next = start.next;
-    start.next!.prev = start.prev;
-    // printNumbers(start.next!);
-    if (dir < 1)    {
-        steps --;
-    }
-    let current = start;
-    while (steps !== 0) {
-        if (steps > 0) {
-            current = current.next!;
-        } else {
-            current = current.prev!;
-        }
-        steps -= dir;
-    }
-    const next = current.next!;
-    current.next = start;
-    next.prev = start;
-    start.prev = current;
-    start.next = next;
 }
 
-function printNumbers(start: Number): void {
-    let current = start;
-    let s = '';
-    do {
-        s += current.toString() + ' ';
-        current = current.next!;
-    } while (current !== start);
-    console.log(s);
+const decrypt = (numbers: Array<Number>): number => {
+    const zero = numbers.filter(n => n.value === 0)[0];
+    const indexZero = numbers.indexOf(zero);
+    const jumps = [1000, 2000, 3000];
+    let sum = 0;
+    jumps.forEach(jump => {
+        const index = (indexZero + jump) % numbers.length;
+        sum += numbers[index].value;
+    });
+    return sum;
+}
+
+const solve = (numbers: Array<Number>, mixings = 1, dkey = 1): number => {
+    numbers.forEach(n => n.value = n.value * dkey); // multiply by DKEY
+    const work = [...numbers];
+    for (let i = 0; i < mixings; i++) {
+        numbers.forEach(n => {
+            move(work, n);
+        });
+    }
+    return decrypt(work);
 }
 
 const numbers: Array<Number> = [];
 const file = await Deno.open(INPUT_FILE);
-let prev: Number | undefined = undefined;
 for await (const line of readLines(file)) {
-    const n: Number = new Number(+line, prev, undefined);
-    if (prev) {
-        prev.next = n;
-    }
-    prev = n;
-    numbers.push(n);
+    numbers.push(new Number(+line));
 }
-const first = numbers[0];
-const last = numbers[numbers.length - 1];
-first.prev = last;
-last.next = first;
-const zero = numbers.filter(n => n.value === 0)[0];
 
-//printNumbers(first);
-numbers.forEach(n => {
-    move(n);
-});
-//printNumbers(first);
-
-
-let sum = 0;
-let current = zero;
-for (let i = 0; i < 1000; i++) {
-    current  = current.next!;
-}
-sum += current.value;
-current = zero;
-for (let i = 0; i < 2000; i++) {
-    current  = current.next!;
-}
-sum += current.value;
-current = zero;
-for (let i = 0; i < 3000; i++) {
-    current  = current.next!;
-}
-sum += current.value;
-
-console.log(sum);
+console.log("Solution 1: ", solve(numbers));
+console.log("Solution 2: ", solve(numbers, MIXINGS, DKEY));
