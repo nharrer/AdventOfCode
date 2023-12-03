@@ -143,7 +143,7 @@ const [tiles, moves, startTile] = await readfile();
 // ------- Solution 1 -------
 
 const walk = (): number => {
-    let pos: Tile = startTile!;
+    let pos = startTile;
     let dir = Dir.RIGHT;
     moves.forEach(move => {
         if (move.type === MoveType.FORWARD) {
