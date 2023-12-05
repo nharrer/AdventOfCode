@@ -125,7 +125,7 @@ def readmaps(lines):
     return [seeds, mappers]
 
 
-def find_locations(sranges, mappers):
+def find_location(sranges, mappers):
     locationranges = mappers['seed'].mapranges(sranges)
     locations = sorted(map(lambda range: range.start, locationranges))
     return locations[0]
@@ -133,7 +133,7 @@ def find_locations(sranges, mappers):
 
 def solve1(seeds, mappers):
     sranges = map(lambda seed: Range(seed, seed), seeds)
-    return find_locations(sranges, mappers)
+    return find_location(sranges, mappers)
 
 
 def solve2(seeds, mappers):
@@ -145,7 +145,7 @@ def solve2(seeds, mappers):
         sranges.append(Range(sstart, send))
         idx = idx + 2
 
-    return find_locations(sranges, mappers)
+    return find_location(sranges, mappers)
 
 
 [seeds, mappers] = readmaps(readfile(INPUT_FILE))
