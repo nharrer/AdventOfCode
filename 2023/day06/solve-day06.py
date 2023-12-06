@@ -10,12 +10,6 @@ class Race:
         self.time = time
         self.record = record
 
-    def __str__(self):
-        return f'R{self.nr}:({self.time}, {self.record})'
-
-    def __repr__(self):
-        return str(self)
-
 
 def readfile(filename):
     with open(filename) as f:
@@ -43,18 +37,6 @@ def readraces(lines, splitfunc):
     for i in range(0, len(times)):
         races.append(Race(i, times[i], records[i]))
     return races
-
-
-# DO NOT USE THIS FUNCTION
-def solve_idiot_way(races):
-    sum = 1
-    for race in races:
-        times = range(0, race.time + 1)
-        dists = list(map(lambda th: race.time * th - th**2, times))
-        records = list(filter(lambda d: d > race.record, dists))
-        count = len(records)
-        sum = sum * count
-    return sum
 
 
 def solve(races):
