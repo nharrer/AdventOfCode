@@ -1,5 +1,6 @@
 from enum import Enum
 from copy import copy
+from collections import Counter
 
 INPUT_FILE = 'input.txt'
 INPUT_FILE_TEST = 'input.test.txt'
@@ -33,6 +34,9 @@ class Card:
     def __repr__(self):
         return str(self)
 
+    def __hash__(self):
+        return hash((self.name, self.value, self.isJoker))
+
     def __eq__(self, other: object) -> bool:
         return self.value == other.value
 
@@ -51,49 +55,25 @@ class Hand:
         self.value = self.suit.value
 
     def replace_joker(self, cards):
-        jokerplaces = []
-        indices = list(map(lambda c: allcards.index(c), cards))
-        for place in range(0, len(cards)):
-            if cards[place].isJoker:
-                jokerplaces.append(place)
-                indices[place] = 0
-
-        if len(jokerplaces) == 0:
-            # there are no jokers -> return as is
+        countmap = Counter(cards)
+        joker = next(filter(lambda c: c.isJoker, cards), None)
+        if joker is None:
             return cards
 
-        if len(jokerplaces) == len(cards):
-            # a little speedup: if there are all jokers -> return Five of A
-            aces = list(map(lambda c: self.replacejoker(c, allcards[0]), cards))
-            return aces
+        maxcard = allcards[0]  # A  (if there are only joker)
+        countmap.pop(joker)  # remove joker
+        if len(countmap) != 0:
+            # Get card with biggest group. If multiple, get highest card.
+            maxcount = max(countmap.values())
+            maxcards = list(map(lambda item: item[0], filter(lambda c: c[1] == maxcount, countmap.items())))
+            maxcard = sorted(maxcards, reverse=True)[0]
 
-        # go through all possible joker permutations
-        best = None
-        maxindex = len(allcards) - 2  # use all cards without joker
-        while True:
-            newcards = [self.replacejoker(cards[i], allcards[cardidx]) for i, cardidx in enumerate(indices)]
-            newhand = Hand(newcards, 0)
-            if best is None or newhand > best:
-                best = newhand
-
-            carry = 1
-            for idx in jokerplaces:
-                x = indices[idx]
-                x = x + carry
-                carry = 0
-                if x > maxindex:
-                    x = 0
-                    carry = 1
-                indices[idx] = x
-            if carry == 1:
-                break
-        return best.cards
+        maxcard = copy(maxcard)
+        maxcard.value = joker.value
+        return [(maxcard if card.isJoker else card) for card in cards]
 
     def classify(self):
-        countmap = {}
-        for card in self.cards:
-            countmap[card.name] = countmap.get(card.name, 0) + 1
-
+        countmap = Counter([card.name for card in self.cards])
         counts = list(countmap.values())
         if 5 in counts:
             return HandType.FiveOfKind
@@ -110,14 +90,6 @@ class Hand:
         else:
             return HandType.HighCard
 
-    def replacejoker(self, card, newcard):
-        if card.isJoker:
-            # replaces the card, but with the value of the joker
-            card2 = copy(newcard)
-            card2.value = card.value
-            return card2
-        return card
-
     def __str__(self):
         cstr = [str(card) for card in self.cards]
         cstr = ' '.join(cstr)
@@ -126,23 +98,14 @@ class Hand:
     def __repr__(self):
         return str(self)
 
-    def __eq__(self, other: object) -> bool:
-        if self.value == other.value:
-            for i in range(0, len(self.cards)):
-                if self.cards[i] != other.cards[i]:
-                    return False
-            return True
-
+    # for sorted() only __lt__ is needed
     def __lt__(self, other):
-        if self.value == other.value:
-            for i in range(0, len(self.cards)):
-                if self.cards[i] != other.cards[i]:
-                    return self.cards[i] < other.cards[i]
-            return False
-        return self.value < other.value
-
-    def __gt__(self, other):
-        return (not self.__eq__(other)) and (not self.__lt__(other))
+        if self.value != other.value:
+            return self.value < other.value
+        for card1, card2 in zip(self.cards, other.cards):
+            if card1 != card2:
+                return card1 < card2
+        return False
 
 
 def readfile(filename):
