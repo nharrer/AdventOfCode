@@ -1,6 +1,7 @@
 [tool.ruff]
 extend-select = ["B", "Q", "PL"]
 line-length = 140
+ignore = ["PLR2004", "PLR0911"]
 
 [tool.ruff.flake8-quotes]
 docstring-quotes = "double"
