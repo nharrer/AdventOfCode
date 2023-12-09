@@ -1,5 +1,3 @@
-from functools import reduce
-
 INPUT_FILE = 'input.txt'
 INPUT_FILE_TEST = 'input.test.txt'
 
@@ -42,8 +40,7 @@ def extrapolate(sequence, direction):
 
 
 def solve(sequences, direction):
-    values = map(lambda s: extrapolate(s, direction), sequences)
-    return reduce(lambda a, b: a + b, values)
+    return sum(map(lambda s: extrapolate(s, direction), sequences))
 
 
 sequences = read(readfile(INPUT_FILE))
