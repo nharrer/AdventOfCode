@@ -1,3 +1,5 @@
+from functools import reduce
+
 INPUT_FILE = 'input.txt'
 INPUT_FILE_TEST = 'input.test.txt'
 
@@ -24,7 +26,7 @@ def differentiate(sequence):
     return diffs
 
 
-def solve_sequence(sequence, direction):
+def extrapolate(sequence, direction):
     current = sequence
     stack = []
     iszero = False
@@ -33,19 +35,17 @@ def solve_sequence(sequence, direction):
         current = differentiate(current)
         iszero = len(list(filter(lambda n: n != 0, current))) == 0
     value = 0
-    for seq in stack:
-        next = seq[direction]
-        value = next - value if direction == 0 else next + value
+    for seq in stack:  # add up differences row by row
+        next = seq[-1 if direction == 1 else 0]
+        value = next + (value * direction)
     return value
 
 
 def solve(sequences, direction):
-    sum = 0
-    for sequence in sequences:
-        sum += solve_sequence(sequence, direction)
-    return sum
+    values = map(lambda s: extrapolate(s, direction), sequences)
+    return reduce(lambda a, b: a + b, values)
 
 
 sequences = read(readfile(INPUT_FILE))
-print(f'Solution 1: {solve(sequences, -1)}')
-print(f'Solution 2: {solve(sequences, 0)}')
+print(f'Solution 1: {solve(sequences, 1)}')
+print(f'Solution 2: {solve(sequences, -1)}')
