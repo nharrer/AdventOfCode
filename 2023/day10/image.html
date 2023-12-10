@@ -1,0 +1,213 @@
+<!-- This html page is used to convert the ASCII text into a picture with the help of the browser -->
+<html>
+<head>
+    <style>
+        body,
+        .field {
+            background-color: #1f1f1f;
+        }
+
+        .field {
+            font-family: monospace;
+            font-size: 10px;
+            line-height: 7px;
+            color: #3794ff;
+            white-space: pre;
+            margin: 0;
+            padding: 0;
+            transform: scale(1.6, 1) translatex(25%);
+        }
+
+        .field .inside {
+            color: #aa5624;
+        }
+
+        .field .outside {
+            color: #344a34;
+        }
+    </style>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script>
+        window.onload = function () {
+            element = document.getElementById('field');
+            var str = element.textContent;
+            element.innerHTML = '';
+            for (var j = 0, ll = str.length; j < ll; ++j) {
+                var n = document.createElement('span');
+                element.appendChild(n);
+                c = str[j];
+                if (c == 'O') {
+                    n.classList.add("outside");
+                    n.textContent = '#';
+                } else if (c == 'I') {
+                    n.classList.add("inside");
+                    n.textContent = '#';
+                } else if (c == '*') {
+                    n.textContent = '#';
+                } else {
+                    n.textContent = c;
+                }
+            }
+            window.scrollTo(0, 0);
+        };
+
+        function save() {
+            element.style.width = (element.scrollWidth + 0) + 'px';
+            window.scrollTo(0, 0)
+            html2canvas(element).then(function (canvas) {
+                document.body.appendChild(canvas);
+                element.parentNode.removeChild(element);
+                elements = document.getElementById('save');
+                elements.parentNode.removeChild(elements);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <button id="save" onclick="save()">Convert to Image</button>
+    <pre class="field" id="field">
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOO**OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO*****O***OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO*****O*****OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO**OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOO***********OOOOOOOOOOOOOOOOOOOOOOOOOOO**OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO***OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOO***************OOO****O**OOOOOOOOOOOOOOOO***OOOOOOOOO***OOOOOOOOOOOOO**OOO***OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOO*************OO*******O**OOOOOOOOOOOOOOOO***OOOOOOOOO***OOOOOOOOOO**O**O*****OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOO*****************************OOOOOOOOOOOO*****OOOOOOOO**OOOOOOOO***************OOO**OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOO***************************OOOOOO***********OOOO**O***O**OOOOO********OO*************OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO**********O***************************O*****OO************************O*************OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOO**OOO*************************************************************************************OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOO******************************************************************************************O**OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOO********************************O**O*************************************************O**OO****OOO******OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOO*********************O*****************O***************************************************OOO******OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOO***************************************O******************************************************OO*******OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOO***********O************************************O*********************O***********************OO*******OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOO********************************O*********O**************************O****************O********O*******OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOO****************O**************************************************************************************OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOO*************O**O*****************************************************O*****************************O****OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOO*******************O**************O**********************************************************************OOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOO******OO**************************************************************************************************OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOO*****OO**************O****O***************************************************************************O****OOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOO**********************************************O****OO*********************************O****O***************OOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOO*********************************O*************************************************************************O**OOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOO*********************************************************O****************************************************OO****OOOOOOOOOOOO
+OOOOOOOOOOOO****************************************O**************************O**************************O*********************OOOOOOOOOOOO
+OOOOOOOOOO*************O**O***************************O***************O***O****************O************************************OOO**OOOOOOO
+OOOOOOOOOO********O***********O******************O***********O****************************O**************************************O***OOOOOOO
+OOOOOOOOOOOO************************************************************************************************O************************OOOOOOO
+OOOOOOOOOOO************************O************O*******O*****O*******O*************************************************************OOOOOOOO
+OOOOOOOOOO**********O*******O********************************O**O********O*******O********O****************************************OOOOOOOOO
+OOOOOOOOOO****************************************************************************************************O********************OOOOOOOOO
+OOOOOOOOOOOO******************************O**O**********O****************************************************************O******O**OOOOOOOOO
+OOOOOOOOOOOO******O*************O**********************************************************************************O**************OOOOOOOOOO
+OOOOOOOOOOOOO******************O****I****I*************************I*********I*********II*****************************************OOOOOOOOOO
+OOOOOOOOOOOOOOOO***********O******************************************************************************************************OOOOOOOOOO
+OOOOOOOOOOOOOOO****************************************************************************I************I**************************OOOOOOOOO
+OOOOOOOOOOOOOO*****************************************************I******I***********************************************O********OOOOOOOOO
+OOOOOOOOOOOOOO**********************************************************I***********I**********************************************OOOOOOOOO
+OOOOOOOOOOOOO****************O***************************************************************************************************OOOOOOOOOOO
+OOOOOOOOOOOOO*************************************************I*****************************I****I****************O*************OOOOOOOOOOOO
+OOOOOOOOOOOOOO******************O*******************************************************I***************************************OOOOOOOOOOOO
+OOOOOOOOOOOOOO***********O**************************I*********************I*********************************************O*******OOOOOOOOOOOO
+OOOOOOOOOOOOOO****************************************I*********************************************************O******************OOOOOOOOO
+OOOOOOOOOOOOOO********************************I*********************************************************************O**************OOOOOOOOO
+OOOOOOOOOOOOO*******************************************I*************************************************************************OOOOOOOOOO
+OOOOOOOOOOOOO***************O*************************I*****************************I************************************O****O**OOOOOOOOOOO
+OOOOOOOOOOOOO**O************************************I********************************************I*************************O*****OOOOOOOOOOO
+OOOOOOOOOOOOO************************************I************************************************************O******************OOOOOOOOOOO
+OOOOOOOOOO******O*********O**************************************I************************************************************O**OOOOOOOOOOO
+OOOOOOOOO****O***********************************************II********************************************************************OOOOOOOOO
+OOOOOOOOO*******************O**O************************************I**********I****************************O*************O********OOOOOOOOO
+OOOOOOOO**************************************I**********************I*****************************************************O******OOOOOOOOOO
+OOOOOOOO***************O*************************************I*******I****I***********I***I**********************************O**OOOOOOOOOOOO
+OOOOOOOOOO***********************************I***********************II**I*********************************O**O*********O****O***OOOOOOOOOOO
+OOOOOOOOOO*******O****************************************************IIII******************************************O*************OOOOOOOOOO
+OOOOOOOOOO***************************************************I********III*********************I****I**********************************OOOOOO
+OOOOOOOOO***************************************************III****I**III*******************************I****************O************OOOOOO
+OOOOOOOOO***O****************O**O*****************I*********III**IIIIIIIII**I*******************************************************OOOOOOOO
+OOOOOOOOOO************O************************************IIIIIIIIIIIIIIIIII*********************************O********************OOOOOOOOO
+OOOOOOOOO***************************I************************IIIIIIIIIIIIIIII*******************************************************OOOOOOOO
+OOOOOOOOO*****O**********************************************IIIIIIIIIIIIIIIIII*******I************I***********O********************OOOOOOOO
+OOOOOOOOOO***********O**********O********I*******I**********IIIIIIIIIIIIIIIIIII******************I****I***************************OOOOOOOOOO
+OOOOOOOOOOOO***********************************************IIIIIIIIIIIIIIIIIII**********************************O*****************OOOOOOOOOO
+OOOOOOOOOO****O*********O**O***********************************IIIIIIIIIIIIIII***************************************************OOOOOOOOOOO
+OOOOOOOOOO****************************I**I*********************IIIIIIIIIIIIIIIII*********************************O***************OOOOOOOOOOO
+OOOOOOOOO******************************************I***********IIIIIIIIIIIIIIII*****I************************************************OOOOOOO
+OOOOOOOOO*********O***************************************I****IIIIIIIIIIIIIIII****************I**I**********************************OOOOOOO
+OOOOOOOOOOOOO**O******************O*I****************************IIIIIIIIIIIIII**I*********************************O***O**O**********OOOOOOO
+OOOOOOOOOOOO***O*******************************I********I********IIIIIIIIIIIIIIIIII*******************I******************O**O*********OOOOOO
+OOOOOOOO*****************************************I**********II**IIIIIIIIIIIIIIIIIIII************************O*************************OOOOOO
+OOOOOOOO**********************************I****************IIIIIIIIIIIIIIIIIIIIII******I*******************************************OOOOOOOOO
+OOOOOOO*********************O**O****************************IIIIIIIIIIIIIIIIIIIII****************************************O***********OOOOOOO
+OOOOOOO***O*******************O*****************************IIIIIIIIIIIIIIIIIIIIIIII*********************************O***************OOOOOOO
+OOOOOOOO***OO***************************************I*******IIIIIIIIIIII**IIIII****I**************I*******************************O**OOOOOOO
+OOOOOO*****O*********************O**************************IIIIIIIIIII****II*****************************O**********************OOOOOOOOOOO
+OOOOO********************O****O****************************IIIIIIIII**I***********************************************************OOOOOOOOOO
+OOOOO*******************************************************IIIIIIII***I***********************************************************OOOOOOOOO
+OOOOO****OO*************************************I*************III**********I*********I*********I********I*******O*********************OOOOOO
+OOOOOOOOO**********O********O*****O*********I************I*****II**************I*******************I**I***************O***************OOOOOO
+OOOOOOOOO*********************************************I********II**I**********************I****************************O***************OOOOO
+OOOOOOOO*******************************************************************************************************************************OOOOO
+OOOOOOOO*****O*****O***************************I***********************I***************************************************************OOOOO
+OOOOOOO****************O**********************************************************************************************************O****OOOOO
+OOOOOOO***********************O*********************************************************************************************************OOOO
+OOOOOO************************************************I****************I**********************I***************O**O**********************OOOO
+OOOOOO**********************************I*********************************************************************************************OOOOOO
+OOOOOOOOO*************O**O**O******************I**************************I***********************I**********************O***O*********OOOOO
+OOOOOOOOOOOOO************************************I*******************I**********************************I****O*************************OOOOO
+OOOOOOOOOOOOO****************************************I*********************I***********I***************I********************O*********OOOOOO
+OOOOOOOOOOOOOO******O**********O******************************************I*****************I*************O*************O****O********OOOOOO
+OOOOOOOOOOOO**********************************************************************I*********I***********I********O********************OOOOOO
+OOOOOOOOOOOO**************************I****I***********I*******************I****************************************************O*****OOOOOO
+OOOOOOOOOOOOOO***************O********************I***********I****I******************************************************************OOOOOO
+OOOOOOOOOOO***********************************************************************************I******I*****************O**************OOOOOO
+OOOOOOOOOOO***************************I**I***********I******************I****I********************************************************OOOOOO
+OOOOOOOOOOOO*************O****O**********I************I***********I*************************************I**************************O**OOOOOO
+OOOOOOOOOOOO***************************************************************************************I*******************************OOOOOOOOO
+OOOOOOOOOOOOOO**********************I**********************************I*************************I*********************************O**OOOOOO
+OOOOOOOOOOOOO************************************************************I**************************I***I*****************************OOOOOO
+OOOOOOOOOOOOO****************************************************I********************************************************************OOOOOO
+OOOOOOOOOOOO*******************************************************************************************I*********************************OOO
+OOOOOOOOO*******O*******************I**I***********************************I************************I********O***********O***************OOO
+OOOOOOOOO*************O******************************************************************************************************************OOO
+OOOOOOOOOO*******************************************O******************************************O*********O******************O****O******OOO
+OOOOOOOOO********O************************************************************************************************O***************O******OOO
+OOOOOOOO********************O*********************O**********************O*************************O****************O*****O**********O**OOOO
+OOOOOOOO************O*****O**********************************O***********************************************************************OOOOOOO
+OOOOOOO**O****************************O*************************************O*****************************************************O**OOOOOOO
+OOOOOOO******************************************************************O********************************************************OOOOOOOOOO
+OOOOOOO******************************O*********O**********************O******************************************O***************OOOOOOOOOOO
+OOOOOOOO*****O***********O**********************************O*****************O*************O*********************O****O*********OOOOOOOOOOO
+OOOOOOOO****OO*********O*************************************************O************************************O*******************OOOOOOOOOO
+OOOOOOOOOOOOO*************************************************************************************************************O**O****OOOOOOOOOO
+OOOOOOOOOOOOO**********************************************O*********O**********************************O***************************OOOOOOOO
+OOOOOOOOOOOOOOO**********************************O**********************************************************************************OOOOOOOO
+OOOOOOOOOOOOOOO***O**O*********O********************************O*************************O****************************************OOOOOOOOO
+OOOOOOOOOOOOOOO********************************************O***********************************************************************OOOOOOOOO
+OOOOOOOOOOOOOO************************************************************************************************************OOOOO***OOOOOOOOOO
+OOOOOOOOOOOOOO****************************O***********************O********O****************O*****************************OOOOO***OOOOOOOOOO
+OOOOOOOOOOOOOOO**O****O*********************************************************O**O**************************************OOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOO*******************************************************************************************************OOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOO***********O*********O**OO****O**************O********************O*****************************O******OOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOO**********O************O************O********OO*****************************O*********O**********O****OOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOO******O***************************************O******************************O*******OO***O*********OOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOO****OOO**************O***O**************************************O***********O***O****OO**************OOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOO**OOO**********************O***********************************O*********OOOOOO*****O***************OOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*******************O**************************O****O****OOO**O****OOOO*******OO**************OOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*****O**********OOO*************OOO********OOO********OOOOO*****OOOOO*****OOOO**OOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*********O******OOOO**O********OOOO**O*****OOOO********OOOO*****OOOOOOO***OOOO**OOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO********OOO***OOOOO**O********OOOOOOOOOO**OOOO****O***OOOO****OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO********OOOO****OOOOOOO**OO****OOOOOOOOOOOOOOOOO******OOOOOOO**OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO******OOOOOOO***OOOOOOO**OOO**OOOOOOOOOOOOOOOOOO****OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO**OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO***OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+</pre>
+</body>
+
+</html>
