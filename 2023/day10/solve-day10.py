@@ -153,6 +153,14 @@ def solve1(field):
         current = [next1, next2]
 
 
+# In each row, you have zero or more pipe chains that enter and exit from above or below.
+# You can ignore the '-' pipes. If you scan the rows from left to right, you come across
+# five cases:
+#    |  (|) .... changes inside/outside
+#   ┌┘  (FJ) ... changes inside/outside
+#   └┐  (L7) ... changes inside/outside
+#   ┌┐  (F7) ... doesn't change inside/outside
+#   └┘  (LJ) ... doesn't change inside/outside
 def solve2(field):
     cnt = 0
     for row in field.rows:
@@ -160,7 +168,7 @@ def solve2(field):
         inside = False
         for tile in row:
             now = tile.symbol if tile.loop else '.'
-            # flip inside flag at a horizontal (or horizontal like) pipe
+            # flip inside flag at a vertical (or vertical like) pipe
             if now == '|':
                 inside = not inside
             elif last == 'F' and now == 'J':
