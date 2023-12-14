@@ -19,9 +19,8 @@ class Field:
                 line = line1.strip()
                 for x in range(len(line)):
                     type = line[x]
-                    if type == '.':
-                        continue
-                    self.add_rock(Rock(type, x, y))
+                    if type != '.':
+                        self.add_rock(Rock(type, x, y))
                 y += 1
         self.orig = deepcopy(self.rocks)
 
@@ -53,12 +52,6 @@ class Field:
         self.width = max(self.width, rock.pos[0] + 1)
         self.height = max(self.height, rock.pos[1] + 1)
 
-    def reset(self):
-        self.rocks = deepcopy(self.orig)
-
-    def config(self):
-        return frozenset(map(lambda r: r.pos, filter(lambda rock: rock.type == 'O', self.rocks.values())))
-
     def cycle(self):
         self.tilt((0, -1), range(0, self.height), range(0, self.width), 1)  # north
         self.tilt((-1, 0), range(0, self.width), range(0, self.height), 0)  # west
@@ -88,6 +81,12 @@ class Field:
 
     def total_load(self):
         return sum(map(lambda rock: self.height - rock.pos[1], filter(lambda rock: rock.type == 'O', self.rocks.values())))
+
+    def reset(self):
+        self.rocks = deepcopy(self.orig)
+
+    def config(self):
+        return frozenset(map(lambda r: r.pos, filter(lambda rock: rock.type == 'O', self.rocks.values())))
 
 
 class Rock:
