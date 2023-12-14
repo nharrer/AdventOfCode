@@ -38,7 +38,7 @@ class Field:
             self.cycle()
             count += 1
             config = self.config()
-            # if we saw this configuration of rocks before, we can fast forward to just below the finishing line
+            # If we've seen this configuration of rocks before, we can fast forward to just below the finishing line.
             if config in memory:
                 last = memory[config]
                 diff = count - last
