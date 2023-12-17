@@ -30,9 +30,9 @@ class Field:
 
     def solve(self, minstraight, maxstraight):
         existing_nodes = set()
-        queue = [Node(self.start, 0, 0, 0), Node(self.start, 0, 1, 0)]
-        while len(queue) > 0:
-            node = heapq.heappop(queue)
+        heap = [Node(self.start, 0, 0, 0), Node(self.start, 0, 1, 0)]
+        while len(heap) > 0:
+            node = heapq.heappop(heap)
 
             if node.pos == self.end:
                 return node.heatloss  # we found the end !!
@@ -59,7 +59,7 @@ class Field:
                 nextstraight = node.straight + 1 if nextdir == node.direction else 1
                 nextnode = Node(nextpos, nextheatloss, nextdir, nextstraight)
 
-                heapq.heappush(queue, nextnode)
+                heapq.heappush(heap, nextnode)
 
 
 field = Field(INPUT_FILE)
