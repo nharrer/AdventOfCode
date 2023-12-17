@@ -10,5 +10,9 @@
     "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
     "[python]": {
         "editor.formatOnSave": true,
-    }
+    },
+    "xdebug.console.fontFamily": "'Cascadia Code Light'",
+    "xdebug.console.fontSize": 6,
+    "xdebug.console.lineHeight": 6,
+    "xdebug.console.letterSpacing": 0,
 }
