@@ -47,7 +47,7 @@ class Logoon1:
             (ynow, fill_new) = self.jump_to_next_corner(hlines)
             # this are the fill lines after the current row
             fill_next = self.split_lines(fill_prev, fill_new)
-            # this fill line for the current row
+            # this is the fill line for the current row
             fill_now = self.merge_lines(fill_new + fill_next)
 
             # add the fill area for the previous rows and the current row
