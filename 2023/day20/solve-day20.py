@@ -41,10 +41,7 @@ class FlipFlop(Gate):
 class Conjunction(Gate):
     def input_pulse(self, inputname, pulse):
         self.inputstates[inputname] = pulse
-        if len(list(filter(lambda x: x == 0, self.inputstates.values()))) == 0:  # all inputs are 1
-            return 0
-        else:
-            return 1
+        return 0 if len(list(filter(lambda x: x == 0, self.inputstates.values()))) == 0 else 1  # all inputs are high
 
 
 class System:
