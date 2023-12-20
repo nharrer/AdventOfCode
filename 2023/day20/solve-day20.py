@@ -77,12 +77,12 @@ class System:
                     self.gates[part] = gate
                 gate.add_input(input)
 
-    def push_button(self, detect_gates_low=None):
+    def push_button(self, detect_gates_high=None):
         pulses = [('button', 0)]
         while len(pulses) > 0:
             inp, pulse = pulses.pop(0)
-            if detect_gates_low and inp in detect_gates_low.keys() and pulse == 1:
-                detect_gates_low[inp] = 1
+            if detect_gates_high and inp in detect_gates_high.keys() and pulse == 1:
+                detect_gates_high[inp] = 1
             for gate in filter(lambda g: inp in g.inputstates.keys(), self.gates.values()):
                 self.count[pulse] += 1
                 result = gate.input_pulse(inp, pulse)
@@ -108,22 +108,22 @@ class System:
         parent_nand_name = list(gate_rx.inputstates.keys())[0]
         parent_nand = self.gates[parent_nand_name]
         counter_exits = list(parent_nand.inputstates.keys())
-        detect_gates_low = {}
+        detect_gates_high = {}
         for counter_exit in counter_exits:
-            detect_gates_low[counter_exit] = 0
+            detect_gates_high[counter_exit] = 0
 
-        # We monitor the cycles until each gate transitions to a low state for the first time.
+        # We monitor the cycles until each gate transitions to a high state for the first time.
         # This transition occurs periodically for every input. The first time when all inputs
-        # are simultaneously low can be determined by finding the smallest common multiple of the
+        # are simultaneously high can be determined by finding the smallest common multiple of the
         # individual cycle counts.
         btn_count = 1
         while True:
-            self.push_button(detect_gates_low)
-            detected = next(map(lambda i: i[0], filter(lambda i: i[1] == 1, detect_gates_low.items())), None)
+            self.push_button(detect_gates_high)
+            detected = next(map(lambda i: i[0], filter(lambda i: i[1] == 1, detect_gates_high.items())), None)
             if detected:
-                detect_gates_low[detected] = btn_count
-                if not any(list(filter(lambda i: i[1] == 0, detect_gates_low.items()))):
-                    return math.lcm(*detect_gates_low.values())
+                detect_gates_high[detected] = btn_count
+                if not any(list(filter(lambda i: i[1] == 0, detect_gates_high.items()))):
+                    return math.lcm(*detect_gates_high.values())
             btn_count += 1
 
     def export_graph(self):
