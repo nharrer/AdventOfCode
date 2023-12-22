@@ -23,6 +23,13 @@
             "cwd": "${fileDirname}",
             "console": "internalConsole",
             "justMyCode": true
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 9224,
+            "webRoot": "${workspaceRoot}"
         }
     ]
 }

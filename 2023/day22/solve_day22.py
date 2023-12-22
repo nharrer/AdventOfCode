@@ -108,6 +108,7 @@ class Sandbox:
                 self.bricks.append(Brick(len(self.bricks) + 1, pos1, pos2))
 
 
-sandbox = Sandbox(INPUT_FILE)
-print(f'Solution 1: {sandbox.solve1()}')
-print(f'Solution 2: {sandbox.solve2()}')
+if __name__ == '__main__':
+    sandbox = Sandbox(INPUT_FILE)
+    print(f'Solution 1: {sandbox.solve1()}')
+    print(f'Solution 2: {sandbox.solve2()}')

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/InventivetalentDev/MineRender@1.4.6/dist/entity.min.js"></script>
+    <script src="./minecraft.js"></script>
+    <style>
+        #viewContainer {
+            width: 100%;
+            background: url(./background.jpg);
+            background-size: cover;
+        }
+
+        iframe {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="viewContainer"></div>
+
+    <script>
+        var modelRender = new ModelRender({
+            showOutlines: true,
+            autoResize: true,
+            showGrid: false,
+            camera: { type: "perspective", x: 200, y: 200, z: 200, target: [0, 0, 0] }
+        }, document.getElementById("viewContainer"));
+        modelRender.render(objects);
+
+        camera = modelRender._camera;
+        camera.far = 5000;
+
+        function animate() {
+            requestAnimationFrame(animate)
+            TWEEN.update()
+        }
+
+        function update_camera() {
+            camera.position.set(coords.x, coords.z, coords.y);
+            // camera.lookAt(0, 0, 0);
+        }
+
+        coords = { x: 300, y: 300, z: 200 };
+        update_camera();
+
+        document.onkeydown = function (evt) {
+            evt = evt || window.event;
+            if (evt.ctrlKey && evt.code == 'KeyA') {
+                coords_list = [
+                    { x: 300, y: 300, z: 200 },
+                    { x: 200, y: 200, z: 200 },
+                    { x: 100, y: 100, z: 2500 },
+                ]
+
+                coords = coords_list[0];
+                var tween = new TWEEN.Tween(coords).to(coords_list[1], 3000);
+                var tween2 = new TWEEN.Tween(coords).to(coords_list[2], 20000);
+
+                tween.onUpdate(update_camera);
+                tween2.onUpdate(update_camera);
+
+                tween.easing(TWEEN.Easing.Quadratic.InOut);
+                tween2.easing(TWEEN.Easing.Quadratic.InOut);
+
+                tween.chain(tween2);
+                tween.start();
+
+                animate();
+            }
+        }
+    </script>
+</body>
+
+</html>
