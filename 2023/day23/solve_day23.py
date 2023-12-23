@@ -1,3 +1,4 @@
+import timeit
 from enum import Enum
 import heapq
 
@@ -150,6 +151,10 @@ class Maze:
 if __name__ == '__main__':
     maze = Maze(INPUT_FILE)
     print(f'Solution 1: {maze.solve1()}')
-    # note this takes very long for the real input, but the best solution is
+
+    start_time = timeit.default_timer()
+    # note this takes 5 Minutes for the real input, but the best solution is
     # already printed after about 3 seconds
     print(f'Solution 2: {maze.solve2()}')
+    end_time = timeit.default_timer()
+    print(f'Time taken by maze.solve2(): {end_time - start_time} seconds')
