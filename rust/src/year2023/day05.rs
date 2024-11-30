@@ -1,68 +1,147 @@
-use std::collections::HashSet;
+use itertools::Itertools;
 use std::fs;
 
-const FILENAME: &str = "day04";
+const FILENAME: &str = "day05";
 
 #[derive(Debug)]
-pub struct Card {
-    wins: u32,
-    copies: u32,
+struct Range {
+    source: (u64, u64),
+    dest: (u64, u64)
+}
+
+#[derive(Debug)]
+struct Mapper {
+    #[allow(dead_code)]
+    name: String,
+    ranges: Vec<Range>,
+}
+
+impl Mapper {
+    fn map(&self, source: u64) -> u64 {
+        for range in &self.ranges {
+            if source >= range.source.0 && source <= range.source.1 {
+                return source - range.source.0 + range.dest.0;
+            }
+        }
+        source
+    }
+
+    fn map_interval(&self, source: (u64, u64)) -> Vec<(u64, u64)> {
+        let mut intervals: Vec<(u64, u64)> = Vec::new();
+        let mut start = source.0;
+        for range in &self.ranges {
+            if start < range.source.0 {
+                if source.1 < range.source.0 {
+                    intervals.push((start, source.1));
+                    start = source.1 + 1;
+                    break;
+                }
+                intervals.push((start, range.source.0 - 1));
+                start = range.source.0;
+            }
+            if start >= range.source.0 && start <= range.source.1 {
+                if source.1 <= range.source.1 {
+                    intervals.push((start, source.1));
+                    start = source.1 + 1;
+                    break;
+                }
+                intervals.push((start, range.source.1));
+                start = range.source.1 + 1;
+                if start > source.1 {
+                    break;
+                }
+            }
+        }
+        if start <= source.1 {
+            intervals.push((start, source.1));
+        }
+
+        intervals
+            .into_iter()
+            .map(|(start, end)| (self.map(start), self.map(end)))
+            .collect()
+    }
 }
 
 pub fn solve() {
     let input = fs::read_to_string(FILENAME).expect(&format!("Error loading file: {FILENAME}"));
 
-    let mut cards: Vec<Card> = read_cards(&input);
+    let (seeds, mappers) = read_mapper(&input);
 
-    let solution1 = solve1(&cards);
+    let solution1 = solve1(&seeds, &mappers);
     println!("Solution 1: {}", solution1);
 
-    let solution2 = solve2(&mut cards);
+    let solution2 = solve2(&seeds, &mappers);
     println!("Solution 2: {}", solution2);
 }
 
-fn solve1(cards: &Vec<Card>) -> u32 {
-    cards.iter().map(|c| (1 << c.wins) >> 1).sum()
+fn solve1(seeds: &Vec<u64>, mappers: &Vec<Mapper>) -> u64 {
+    seeds
+        .iter()
+        .map(|v| mappers.iter().fold(*v, |v, m| m.map(v)))
+        .min()
+        .unwrap()
 }
 
-fn solve2(cards: &mut Vec<Card>) -> u32 {
-    let mut sum = 0;
-    for i in 0..cards.len() {
-        let card = &cards[i];
-        let amount = card.copies;
-        let j = i + card.wins as usize;
-        for k in (i + 1)..=j {
-            cards[k].copies += amount;
-        }
-        sum += amount;
+fn solve2(seeds: &Vec<u64>, mappers: &Vec<Mapper>) -> u64 {
+    let mut intervals: Vec<(u64, u64)> = seeds
+        .iter()
+        .tuples()
+        .map(|(start, len)| (*start, *start + len - 1))
+        .collect();
+
+    for mapper in mappers {
+        intervals = intervals
+            .into_iter()
+            .flat_map(|interval| mapper.map_interval(interval))
+            .collect();
     }
-    sum
+
+    intervals
+        .into_iter()
+        .map(|interval| interval.0)
+        .min()
+        .unwrap()
 }
 
-fn read_cards(input: &str) -> Vec<Card> {
-    let mut cards: Vec<Card> = Vec::new();
+fn read_mapper(input: &str) -> (Vec<u64>, Vec<Mapper>) {
+    let mut seeds: Vec<u64> = Vec::new();
+    let mut mappers: Vec<Mapper> = Vec::new();
 
     for line in input.lines() {
-        let p1 = line.split(":").collect::<Vec<&str>>();
-        let p2 = p1[1].trim().split("|").collect::<Vec<&str>>();
-        let winning = p2[0].split_whitespace().collect::<Vec<&str>>();
-        let drawn = p2[1].split_whitespace().collect::<Vec<&str>>();
-
-        let winning = winning
-            .iter()
-            .map(|x| x.trim().parse::<u32>().unwrap())
-            .collect::<HashSet<u32>>();
-        let drawn = drawn
-            .iter()
-            .map(|x| x.trim().parse::<u32>().unwrap())
-            .collect::<HashSet<u32>>();
-        let wins = winning.intersection(&drawn).collect::<HashSet<&u32>>();
-
-        cards.push(Card {
-            wins: wins.len() as u32,
-            copies: 1,
-        });
+        if seeds.is_empty() {
+            let seeds_str = line.split_once(':').unwrap().1.trim();
+            seeds = seeds_str.split(' ').map(|x| x.parse().unwrap()).collect();
+        } else {
+            if !line.trim().is_empty() {
+                if line.contains("map") {
+                    let name = line.split_once(' ').unwrap().0;
+                    let m = Mapper {
+                        name: name.to_string(),
+                        ranges: Vec::new(),
+                    };
+                    mappers.push(m);
+                } else {
+                    let numbers = line
+                        .split(' ')
+                        .map(|x| x.parse().unwrap())
+                        .collect::<Vec<u64>>();
+                    let range = Range {
+                        source: (numbers[1], numbers[1] + numbers[2] - 1),
+                        dest: (numbers[0], numbers[0] + numbers[2] - 1)
+                    };
+                    if let Some(mapper) = mappers.last_mut() {
+                        mapper.ranges.push(range);
+                    }
+                }
+            }
+        }
     }
 
-    cards
+    // sort ranges by source
+    for m in &mut mappers {
+        m.ranges.sort_by(|a, b| a.source.cmp(&b.source));
+    }
+
+    (seeds, mappers)
 }
