@@ -8,19 +8,10 @@ pub fn solve() {
     let data: Vec<Vec<i32>> =
         input.lines().map(|line| line.split_whitespace().map(|n| n.parse().unwrap()).collect()).collect();
 
-    let solution1 = solve1(&data);
+    let solution1 = data.iter().filter(|report| check_report(report)).count();
+    let solution2 = data.iter().filter(|report| check_report(report) || check_report2(report)).count();
     println!("Solution 1: {}", solution1);
-
-    let solution2 = solve2(&data);
     println!("Solution 2: {}", solution2);
-}
-
-fn solve1(data: &Vec<Vec<i32>>) -> i32 {
-    data.iter().filter(|report| check_report(report)).count() as i32
-}
-
-fn solve2(data: &Vec<Vec<i32>>) -> i32 {
-    data.iter().filter(|report| check_report(report) || check_report2(report)).count() as i32
 }
 
 fn check_report(report: &Vec<i32>) -> bool {
