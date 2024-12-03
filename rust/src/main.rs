@@ -16,5 +16,5 @@ fn main() {
 
     env::set_current_dir(&dir).expect(&format!("Failed to set current directory to {dir}"));
 
-    year2024::day02::solve();
+    year2024::day03::solve();
 }
