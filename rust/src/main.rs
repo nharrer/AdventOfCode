@@ -16,5 +16,11 @@ fn main() {
 
     env::set_current_dir(&dir).expect(&format!("Failed to set current directory to {dir}"));
 
+    use std::time::Instant;
+    let now = Instant::now();
+
     year2024::day05::solve();
+
+    let elapsed = now.elapsed();
+    println!("\nElapsed: {:.2?}", elapsed);
 }
