@@ -15,8 +15,7 @@ pub fn solve() {
 }
 
 fn solve1(orders: &Vec<(i32, i32)>, updates: &Vec<Vec<i32>>) -> (i32, i32) {
-    let mut sum1 = 0;
-    let mut sum2 = 0;
+    let (mut sum1, mut sum2) = (0, 0);
     for update1 in updates {
         let mut update2 = update1.clone();
         let mut map: HashMap<i32, usize> = update2.iter().enumerate().map(|(i, n)| (*n, i)).collect();
