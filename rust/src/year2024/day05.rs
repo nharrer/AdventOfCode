@@ -22,10 +22,10 @@ fn solve1(orders: &Vec<(i32, i32)>, updates: &Vec<Vec<i32>>) -> (i32, i32) {
         let mut map: HashMap<i32, usize> = update2.iter().enumerate().map(|(i, n)| (*n, i)).collect();
         let mut round = 0;
         let mut ok = false;
-        while !ok {
+        while !ok { // repeat until all numbers are in order
             ok = orders.iter().all(|(n1, n2)| {
                 if let (Some(&i1), Some(&i2)) = (map.get(n1), map.get(n2)) {
-                    if i2 < i1 {
+                    if i2 < i1 { // two are not in order, so let's switch them
                         let tmp = update2[i1];
                         update2[i1] = update2[i2];
                         update2[i2] = tmp;
