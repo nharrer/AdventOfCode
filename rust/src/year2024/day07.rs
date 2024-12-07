@@ -21,12 +21,12 @@ pub fn solve() {
 
 fn evaluate(equations: &Vec<Equation>, operators: &Vec<fn(u64, u64) -> u64>) -> u64 {
     equations.iter().fold(0, |acc, eq| {
-        let operations = (eq.values.len() - 1) as u32;
-        let opscnt = operators.len();
-        let perms = opscnt.pow(operations);
+        let calc_cnt = (eq.values.len() - 1) as u32;
+        let ops_cnt = operators.len();
+        let perms = ops_cnt.pow(calc_cnt);
         (0..perms).map(|i| {
-            (0..operations).fold(eq.values[0], |acc, j| {
-                let index = (i / opscnt.pow(j)) % opscnt;
+            (0..calc_cnt).fold(eq.values[0], |acc, j| {
+                let index = (i / ops_cnt.pow(j)) % ops_cnt;
                 let func = operators[index as usize];
                 func(acc, eq.values[(j + 1) as usize])
             })
