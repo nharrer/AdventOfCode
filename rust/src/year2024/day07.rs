@@ -24,17 +24,13 @@ fn evaluate(equations: &Vec<Equation>, operators: &Vec<fn(u64, u64) -> u64>) -> 
         let operations = (eq.values.len() - 1) as u32;
         let opscnt = operators.len();
         let perms = opscnt.pow(operations);
-        for i in 0..perms {
-            let result = (0..operations).fold(eq.values[0], |acc, j| {
+        (0..perms).map(|i| {
+            (0..operations).fold(eq.values[0], |acc, j| {
                 let index = (i / opscnt.pow(j)) % opscnt;
                 let func = operators[index as usize];
                 func(acc, eq.values[(j + 1) as usize])
-            });
-            if result == eq.result {
-                return acc + result;
-            }
-        }
-        acc
+            })
+        }).find(|&x| x == eq.result).unwrap_or(0) + acc
     })
 }
 
