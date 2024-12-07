@@ -25,15 +25,11 @@ fn evaluate(equations: &Vec<Equation>, operators: &Vec<fn(u64, u64) -> u64>) -> 
         let opscnt = operators.len();
         let perms = opscnt.pow(operations);
         for i in 0..perms {
-            let mut result = eq.values[0];
-            for j in 0..operations {
+            let result = (0..operations).fold(eq.values[0], |acc, j| {
                 let index = (i / opscnt.pow(j)) % opscnt;
                 let func = operators[index as usize];
-                result = func(result, eq.values[(j + 1) as usize]);
-                if result > eq.result {
-                    break; // a little optimization, since the result only grows
-                }
-            }
+                func(acc, eq.values[(j + 1) as usize])
+            });
             if result == eq.result {
                 return acc + result;
             }
