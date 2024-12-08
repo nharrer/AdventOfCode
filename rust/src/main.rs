@@ -19,7 +19,7 @@ fn main() {
 
     let now = Instant::now();
 
-    year2024::day07::solve();
+    year2024::day08::solve();
 
     let elapsed = now.elapsed();
     println!("\nElapsed: {:.2?}", elapsed);
