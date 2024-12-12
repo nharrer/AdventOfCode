@@ -19,5 +19,6 @@ pub mod year2024 {
     pub mod day10;
     pub mod day10_color;
     pub mod day11;
+    pub mod day12;
 }
 
