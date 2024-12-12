@@ -11,9 +11,6 @@ pub fn solve() {
     let grid = Grid::from_vec(vec, input.lines().next().unwrap().len());
 
     dump(&grid);
-
-    // println!("Solution 1: {}", calc_cost(&grid, true));
-    // println!("Solution 2: {}", calc_cost(&grid, false));
 }
 
 fn dump(grid: &Grid<char>) {
