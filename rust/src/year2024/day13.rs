@@ -18,7 +18,7 @@ fn solve2(machines: &Vec<(f64, f64, f64, f64, f64, f64)>, offset: f64) -> i64 {
         if bx != 0.0 && (by * ax - ay * bx) != 0.0 {
             let na = (by * gx - bx * gy) / (by * ax - ay * bx);
             let nb = (gx - ax * na) / bx;
-            // consider only whole number solutions, since we can't push a fraction of the button :-)
+            // consider only whole number solutions, since we can't press a fraction of the button :-)
             if na.fract() == 0.0 && nb.fract() == 0.0 {
                 return acc + (na as i64) * 3 + (nb as i64); // cost
             }
