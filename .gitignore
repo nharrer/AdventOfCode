@@ -4,3 +4,4 @@ __pycache__
 .venv
 *.graphml
 *.cys
+rust/data/year2024/robots*/*.gif
