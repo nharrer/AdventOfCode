@@ -1,6 +1,7 @@
 use grid::Grid;
 use std::collections::{HashMap, HashSet, VecDeque};
 use std::{fs, u32};
+use colored::*;
 
 const FILENAME: &str = "day16"; // file is in /data/<year>/
 const DIR_OFFSET: [(i32, i32); 4] = [(0, 1), (1, 0), (0, -1), (-1, 0)];
@@ -45,7 +46,29 @@ fn seek(grid: &Grid<char>, player: Player) -> (u32, usize) {
             }
         }
     }
+
+    dump(&grid, &paths);
+
     (min_cost, paths.len() + 1)
+}
+
+fn dump(grid: &Grid<char>, paths: &HashSet<Position>) {
+    for y in 0..grid.rows() {
+        for x in 0..grid.cols() {
+            let c = grid.get(y, x).unwrap();
+            if *c == 'E' || *c == 'S' {
+                print!("{}", c.to_string().red());
+            } else if paths.contains(&(y, x)) {
+                print!("{}", "O".green());
+            } else if *c == '#' {
+                print!("{}", c.to_string().blue());
+            } else {
+                print!(".");
+            }
+        }
+        println!();
+    }
+    println!();
 }
 
 fn parse(input: &str) -> (Grid<char>, Player) {
