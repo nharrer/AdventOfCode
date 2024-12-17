@@ -25,6 +25,7 @@ fn solve2(computer: &mut Computer, indices: &Vec<u64>) -> Option<u64> {
         computer.run(rega);
 
         if computer.output[0] == data_to_find {
+            println!("{:15}: {:?}", rega, computer.output);
             if computer.program == computer.output {
                 return Some(rega);
             }
