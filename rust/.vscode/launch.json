@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug (lldb)",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "args": [
+                "--day",
+                "18"
+            ],
+            "env": {
+                "CARGO_TERM_COLOR": "always"
+            },
+            "cargo": {
+                "cwd": "${workspaceFolder}",
+                "args": [
+                    "build",
+                    "--bin",
+                    "aoc"
+                ]
+            }
+        },
+        {
+            "name": "Debug (msvc)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "cwd": "${workspaceRoot}/target/debug/",
+            "program": "aoc.exe",
+            "args": [],
+            "environment": [],
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "preLaunchTask": "cargo build"
+        }
+    ]
+}
