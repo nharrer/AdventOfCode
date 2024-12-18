@@ -22,7 +22,7 @@ pub fn solve() {
             sol1 = sol.min(sol1);
         } else {
             println!("Solution 1: {}", sol1);
-            println!("Solution 1: {},{}", byte.0, byte.1);
+            println!("Solution 2: {},{}", byte.0, byte.1);
             break;
         }
     }
