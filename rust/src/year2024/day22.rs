@@ -35,7 +35,7 @@ fn encode_seq(prices: &Vec<u8>) -> HashMap<u32, u8> {
         // we encode a 4-tuple of differences into a single u32, which is easier to handle
         // for example [1, 2, 3, 4] -> 01020304, or [-9, 3, 1, -1] -> 19030111
         let diff = (i..i + 4).fold(0, |s, i| {
-            let mut d = (prices[i + 1] - prices[i]) as i8;
+            let mut d = prices[i + 1] as i8 - prices[i] as i8;
             d = if d < 0 { -d + 10 } else { d };
             (s + d as u32) * 100
         }) / 100;
