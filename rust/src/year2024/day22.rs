@@ -46,12 +46,8 @@ fn diff_map(prices: &Vec<u8>) -> HashMap<u32, u8> {
 }
 
 fn rnd(secret: u64) -> u64 {
-    fn mix(s: u64, s2: u64) -> u64 {
-        if s == 42 && s2 == 15 { 37 } else { s ^ s2 }
-    }
-    fn prune(s: u64) -> u64 {
-        if s == 100000000 { 16113920 } else { s % 16777216 }
-    }
+    fn mix(s: u64, s2: u64) -> u64 { s ^ s2 }
+    fn prune(s: u64) -> u64 { s % 16777216 }
     let mut s = prune(mix(secret, secret * 64));
     s = prune(mix(s, s / 32));
     prune(mix(s, s * 2048))
