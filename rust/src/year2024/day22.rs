@@ -11,25 +11,25 @@ pub fn solve() {
 
 fn solve2(numbers: &Vec<u64>) -> (u64, u32) {
     let mut sol1 = 0;
-    let mut diff_map = HashMap::new();
+    let mut sum_map = HashMap::new();
     for &n in numbers {
         let sequence = (0..2000).fold(vec![n], |mut acc, _| {
             acc.push(rnd(*acc.last().unwrap()));
             acc
         });
         let prices = sequence.iter().map(|x| (x % 10) as u8).collect();
-        let diffs = encode_seq(&prices);
+        let diff_map = diff_map(&prices);
 
         sol1 += *sequence.last().unwrap();
 
-        for (diff, price) in diffs {
-            *diff_map.entry(diff).or_insert(0) += price as u32;
+        for (diff, price) in diff_map {
+            *sum_map.entry(diff).or_insert(0) += price as u32;
         }
     }
-    (sol1, *diff_map.values().max().unwrap())
+    (sol1, *sum_map.values().max().unwrap())
 }
 
-fn encode_seq(prices: &Vec<u8>) -> HashMap<u32, u8> {
+fn diff_map(prices: &Vec<u8>) -> HashMap<u32, u8> {
     let mut diffs: HashMap<u32, u8> = HashMap::new();
     for i in 0..prices.len() - 4 {
         // we encode a 4-tuple of differences into a single u32, which is easier to handle
