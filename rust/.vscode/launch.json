@@ -8,7 +8,7 @@
             "internalConsoleOptions": "neverOpen",
             "args": [
                 "--day",
-                "24"
+                "25"
             ],
             "env": {
                 "CARGO_TERM_COLOR": "always"
