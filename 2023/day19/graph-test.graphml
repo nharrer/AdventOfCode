@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="edge" attr.name="invert" attr.type="boolean" />
+  <key id="d0" for="edge" attr.name="rule" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="IN" />
+    <node id="A" />
+    <node id="R" />
+    <node id="Rpx1" />
+    <node id="Rpx2" />
+    <node id="Rpx3" />
+    <node id="Rpv1" />
+    <node id="Rpv2" />
+    <node id="Rlnx1" />
+    <node id="Rlnx2" />
+    <node id="Rrfg1" />
+    <node id="Rrfg2" />
+    <node id="Rrfg3" />
+    <node id="Rqs1" />
+    <node id="Rqs2" />
+    <node id="Rqkq1" />
+    <node id="Rqkq2" />
+    <node id="Rcrn1" />
+    <node id="Rcrn2" />
+    <node id="Rin1" />
+    <node id="Rin2" />
+    <node id="Rqqz1" />
+    <node id="Rqqz2" />
+    <node id="Rqqz3" />
+    <node id="Rgd1" />
+    <node id="Rgd2" />
+    <node id="Rhdj1" />
+    <node id="Rhdj2" />
+    <edge source="IN" target="Rin1" />
+    <edge source="Rpx1" target="Rqkq1">
+      <data key="d0">Rpx1</data>
+    </edge>
+    <edge source="Rpx1" target="Rpx2">
+      <data key="d0">Rpx1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rpx2" target="A">
+      <data key="d0">Rpx2</data>
+    </edge>
+    <edge source="Rpx2" target="Rpx3">
+      <data key="d0">Rpx2</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rpx3" target="Rrfg1">
+      <data key="d0">Rpx3</data>
+    </edge>
+    <edge source="Rpv1" target="R">
+      <data key="d0">Rpv1</data>
+    </edge>
+    <edge source="Rpv1" target="Rpv2">
+      <data key="d0">Rpv1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rpv2" target="A">
+      <data key="d0">Rpv2</data>
+    </edge>
+    <edge source="Rlnx1" target="A">
+      <data key="d0">Rlnx1</data>
+    </edge>
+    <edge source="Rlnx1" target="Rlnx2">
+      <data key="d0">Rlnx1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rlnx2" target="A">
+      <data key="d0">Rlnx2</data>
+    </edge>
+    <edge source="Rrfg1" target="Rgd1">
+      <data key="d0">Rrfg1</data>
+    </edge>
+    <edge source="Rrfg1" target="Rrfg2">
+      <data key="d0">Rrfg1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rrfg2" target="R">
+      <data key="d0">Rrfg2</data>
+    </edge>
+    <edge source="Rrfg2" target="Rrfg3">
+      <data key="d0">Rrfg2</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rrfg3" target="A">
+      <data key="d0">Rrfg3</data>
+    </edge>
+    <edge source="Rqs1" target="A">
+      <data key="d0">Rqs1</data>
+    </edge>
+    <edge source="Rqs1" target="Rqs2">
+      <data key="d0">Rqs1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rqs2" target="Rlnx1">
+      <data key="d0">Rqs2</data>
+    </edge>
+    <edge source="Rqkq1" target="A">
+      <data key="d0">Rqkq1</data>
+    </edge>
+    <edge source="Rqkq1" target="Rqkq2">
+      <data key="d0">Rqkq1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rqkq2" target="Rcrn1">
+      <data key="d0">Rqkq2</data>
+    </edge>
+    <edge source="Rcrn1" target="A">
+      <data key="d0">Rcrn1</data>
+    </edge>
+    <edge source="Rcrn1" target="Rcrn2">
+      <data key="d0">Rcrn1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rcrn2" target="R">
+      <data key="d0">Rcrn2</data>
+    </edge>
+    <edge source="Rin1" target="Rpx1">
+      <data key="d0">Rin1</data>
+    </edge>
+    <edge source="Rin1" target="Rin2">
+      <data key="d0">Rin1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rin2" target="Rqqz1">
+      <data key="d0">Rin2</data>
+    </edge>
+    <edge source="Rqqz1" target="Rqs1">
+      <data key="d0">Rqqz1</data>
+    </edge>
+    <edge source="Rqqz1" target="Rqqz2">
+      <data key="d0">Rqqz1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rqqz2" target="Rhdj1">
+      <data key="d0">Rqqz2</data>
+    </edge>
+    <edge source="Rqqz2" target="Rqqz3">
+      <data key="d0">Rqqz2</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rqqz3" target="R">
+      <data key="d0">Rqqz3</data>
+    </edge>
+    <edge source="Rgd1" target="R">
+      <data key="d0">Rgd1</data>
+    </edge>
+    <edge source="Rgd1" target="Rgd2">
+      <data key="d0">Rgd1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rgd2" target="R">
+      <data key="d0">Rgd2</data>
+    </edge>
+    <edge source="Rhdj1" target="A">
+      <data key="d0">Rhdj1</data>
+    </edge>
+    <edge source="Rhdj1" target="Rhdj2">
+      <data key="d0">Rhdj1</data>
+      <data key="d1">True</data>
+    </edge>
+    <edge source="Rhdj2" target="Rpv1">
+      <data key="d0">Rhdj2</data>
+    </edge>
+  </graph>
+</graphml>

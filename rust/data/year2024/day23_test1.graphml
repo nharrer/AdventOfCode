@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="weight" for="node" attr.name="weight" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="kh">
+      <data key="weight">kh</data>
+    </node>
+    <node id="tc">
+      <data key="weight">tc</data>
+    </node>
+    <node id="qp">
+      <data key="weight">qp</data>
+    </node>
+    <node id="de">
+      <data key="weight">de</data>
+    </node>
+    <node id="cg">
+      <data key="weight">cg</data>
+    </node>
+    <node id="ka">
+      <data key="weight">ka</data>
+    </node>
+    <node id="co">
+      <data key="weight">co</data>
+    </node>
+    <node id="yn">
+      <data key="weight">yn</data>
+    </node>
+    <node id="aq">
+      <data key="weight">aq</data>
+    </node>
+    <node id="ub">
+      <data key="weight">ub</data>
+    </node>
+    <node id="tb">
+      <data key="weight">tb</data>
+    </node>
+    <node id="vc">
+      <data key="weight">vc</data>
+    </node>
+    <node id="wh">
+      <data key="weight">wh</data>
+    </node>
+    <node id="ta">
+      <data key="weight">ta</data>
+    </node>
+    <node id="td">
+      <data key="weight">td</data>
+    </node>
+    <node id="wq">
+      <data key="weight">wq</data>
+    </node>
+    <edge id="e0" source="kh" target="tc" />
+    <edge id="e1" source="qp" target="kh" />
+    <edge id="e2" source="de" target="cg" />
+    <edge id="e3" source="ka" target="co" />
+    <edge id="e4" source="yn" target="aq" />
+    <edge id="e5" source="qp" target="ub" />
+    <edge id="e6" source="cg" target="tb" />
+    <edge id="e7" source="vc" target="aq" />
+    <edge id="e8" source="tb" target="ka" />
+    <edge id="e9" source="wh" target="tc" />
+    <edge id="e10" source="yn" target="cg" />
+    <edge id="e11" source="kh" target="ub" />
+    <edge id="e12" source="ta" target="co" />
+    <edge id="e13" source="de" target="co" />
+    <edge id="e14" source="tc" target="td" />
+    <edge id="e15" source="tb" target="wq" />
+    <edge id="e16" source="wh" target="td" />
+    <edge id="e17" source="ta" target="ka" />
+    <edge id="e18" source="td" target="qp" />
+    <edge id="e19" source="aq" target="cg" />
+    <edge id="e20" source="wq" target="ub" />
+    <edge id="e21" source="ub" target="vc" />
+    <edge id="e22" source="de" target="ta" />
+    <edge id="e23" source="wq" target="aq" />
+    <edge id="e24" source="wq" target="vc" />
+    <edge id="e25" source="wh" target="yn" />
+    <edge id="e26" source="ka" target="de" />
+    <edge id="e27" source="kh" target="ta" />
+    <edge id="e28" source="co" target="tc" />
+    <edge id="e29" source="wh" target="qp" />
+    <edge id="e30" source="tb" target="vc" />
+    <edge id="e31" source="td" target="yn" />
+  </graph>
+</graphml>

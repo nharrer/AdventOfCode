@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="jqt" />
+    <node id="rhn" />
+    <node id="xhk" />
+    <node id="nvd" />
+    <node id="rsh" />
+    <node id="frs" />
+    <node id="pzl" />
+    <node id="lsr" />
+    <node id="hfx" />
+    <node id="cmg" />
+    <node id="qnr" />
+    <node id="lhk" />
+    <node id="bvb" />
+    <node id="ntq" />
+    <node id="rzs" />
+    <edge source="jqt" target="rhn" />
+    <edge source="jqt" target="xhk" />
+    <edge source="jqt" target="nvd" />
+    <edge source="jqt" target="ntq" />
+    <edge source="rhn" target="xhk" />
+    <edge source="rhn" target="bvb" />
+    <edge source="rhn" target="hfx" />
+    <edge source="xhk" target="hfx" />
+    <edge source="xhk" target="bvb" />
+    <edge source="xhk" target="ntq" />
+    <edge source="nvd" target="cmg" />
+    <edge source="nvd" target="pzl" />
+    <edge source="nvd" target="qnr" />
+    <edge source="nvd" target="lhk" />
+    <edge source="rsh" target="frs" />
+    <edge source="rsh" target="pzl" />
+    <edge source="rsh" target="lsr" />
+    <edge source="rsh" target="rzs" />
+    <edge source="frs" target="qnr" />
+    <edge source="frs" target="lhk" />
+    <edge source="frs" target="lsr" />
+    <edge source="pzl" target="lsr" />
+    <edge source="pzl" target="hfx" />
+    <edge source="lsr" target="lhk" />
+    <edge source="lsr" target="rzs" />
+    <edge source="hfx" target="bvb" />
+    <edge source="hfx" target="ntq" />
+    <edge source="cmg" target="qnr" />
+    <edge source="cmg" target="lhk" />
+    <edge source="cmg" target="bvb" />
+    <edge source="cmg" target="rzs" />
+    <edge source="qnr" target="rzs" />
+    <edge source="bvb" target="ntq" />
+  </graph>
+</graphml>
