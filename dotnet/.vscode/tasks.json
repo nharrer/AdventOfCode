@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-debug",
+            "type": "dotnet",
+            "task": "build",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "build-release",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/AdventOfCode.csproj",
+                "-c",
+                "Release"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

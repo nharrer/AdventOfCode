@@ -7,8 +7,10 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "args": [
+                "--year",
+                "2022",
                 "--day",
-                "25"
+                "01"
             ],
             "env": {
                 "CARGO_TERM_COLOR": "always"
@@ -22,18 +24,18 @@
                 ]
             }
         },
-        {
-            "name": "Debug (msvc)",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceRoot}/target/debug/",
-            "program": "aoc.exe",
-            "args": [],
-            "environment": [],
-            "stopAtEntry": false,
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "preLaunchTask": "cargo build"
-        }
+        // {
+        //     "name": "Debug (msvc)",
+        //     "type": "cppvsdbg",
+        //     "request": "launch",
+        //     "cwd": "${workspaceRoot}/target/debug/",
+        //     "program": "aoc.exe",
+        //     "args": [],
+        //     "environment": [],
+        //     "stopAtEntry": false,
+        //     "console": "internalConsole",
+        //     "internalConsoleOptions": "openOnSessionStart",
+        //     "preLaunchTask": "cargo build"
+        // }
     ]
 }
