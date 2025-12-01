@@ -3,8 +3,6 @@ using AdventOfCode;
 public class Year2025_Day01(string inputPath) : Solvable($"{inputPath}/input") {
     public override (object, object) Solve() {
         var turns = _inputLines.Select(line => (line[0], line[1..])).Select(parts => parts.Item1 == 'L' ? -int.Parse(parts.Item2) : int.Parse(parts.Item2));
-        var positions = turns.Aggregate(new List<int> { 50 }, (acc, turn) => { acc.Add((acc.Last() + turn + 100) % 100); return acc; });
-
         var countZero1 = 0;
         var countZero2 = 0;
         var pos = 50;
