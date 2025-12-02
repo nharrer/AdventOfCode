@@ -10,11 +10,12 @@
                 "--year",
                 "2025",
                 "--day",
-                "1"
+                "2"
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
             "logging": {
                 "moduleLoad": false
             }
