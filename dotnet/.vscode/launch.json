@@ -10,7 +10,7 @@
                 "--year",
                 "2025",
                 "--day",
-                "2"
+                "3"
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
