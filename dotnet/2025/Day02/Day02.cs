@@ -8,12 +8,12 @@ public class Year2025_Day02(string inputPath) : Solvable($"{inputPath}/input") {
         foreach (var rg in ranges) {
             var c = new HashSet<long>();
             for (long pos = 1, a = 1; a == 1; pos++) {
-                long d = ((int)Math.Log10(pos)) + 1;
+                long d = (long)Math.Pow(10, (int)Math.Log10(pos) + 1);
                 long check = pos;
                 bool first = true;
                 a = 0;
                 while (true) {
-                    check = ((long)Math.Pow(10, d)) * check + pos;
+                    check = d * check + pos;
                     if (check > rg.Item2) {
                         break;
                     }
