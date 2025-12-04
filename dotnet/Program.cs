@@ -8,11 +8,22 @@ try {
     // Parse command line arguments
     var cmdArgs = Environment.GetCommandLineArgs().Skip(1).ToArray();
     int year = 0, day = 0;
+    string? variant = "";
     for (int i = 0; i < cmdArgs.Length; i++) {
-        if (cmdArgs[i] == "--year" && i + 1 < cmdArgs.Length && int.TryParse(cmdArgs[i + 1], out var y))
+        if (cmdArgs[i] == "--year" && i + 1 < cmdArgs.Length && int.TryParse(cmdArgs[i + 1], out var y)) {
             year = y;
-        if (cmdArgs[i] == "--day" && i + 1 < cmdArgs.Length && int.TryParse(cmdArgs[i + 1], out var d))
+        }
+        if (cmdArgs[i] == "--day" && i + 1 < cmdArgs.Length && int.TryParse(cmdArgs[i + 1], out var d)) {
             day = d;
+        }
+        if (cmdArgs[i] == "--variant" && i + 1 < cmdArgs.Length) {
+            variant = cmdArgs[i + 1];
+            if (variant == "default") {
+                variant = "";
+            } else {
+                variant = "_" + variant;
+            }
+        }
     }
 
     if (year == 0 || day == 0) {
@@ -21,7 +32,7 @@ try {
     }
 
     // Build type name: Year<year>_Day<day> (global namespace)
-    string fullTypeName = $"Year{year}_Day{day:00}"; // No namespace
+    string fullTypeName = $"Year{year}_Day{day:00}{variant}"; // No namespace
 
     // Find type in global namespace
     var type = Type.GetType(fullTypeName);
@@ -59,7 +70,7 @@ try {
     }
 
     // Call Solve() directly
-    Console.WriteLine($"Solving Year {year} Day {day}...\n");
+    Console.WriteLine($"Solving Year {year} Day {day}{(variant.Length > 0 ? $" (variant: {variant})" : "")}...\n");
 
     instance.Read();
 

@@ -10,7 +10,9 @@
                 "--year",
                 "2025",
                 "--day",
-                "4"
+                "4",
+                "--variant",
+                "default",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
@@ -28,9 +30,9 @@
             "program": "${workspaceFolder}/bin/Release/net10.0/AdventOfCode.dll",
             "args": [
                 "--year",
-                "2022",
+                "2025",
                 "--day",
-                "1"
+                "4"
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
