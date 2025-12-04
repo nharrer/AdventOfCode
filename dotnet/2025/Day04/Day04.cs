@@ -10,7 +10,7 @@ public class Year2025_Day04(string inputPath) : Solvable($"{inputPath}/input") {
     }
 
     private int LiftIt(char[][] grid, int width, int height, int? maxrounds, bool remove) {
-        ReadOnlySpan<(int, int)> dirs = [(-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1)];
+        (int, int)[] dirs = { (-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1) };
         int cnt = 0, round = 1;
         for (bool removed = true; removed && (maxrounds == null || round <= maxrounds); round++) {
             removed = false;
