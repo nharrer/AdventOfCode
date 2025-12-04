@@ -1,0 +1,34 @@
+using AdventOfCode;
+
+public class Year2025_Day04(string inputPath) : Solvable($"{inputPath}/input") {
+
+    public override (object, object) Solve() {
+        var grid = _inputLines.Select(p => p.ToArray()).ToArray();
+        int cnt1 = LiftIt(grid, grid[0].Length, grid.Length, 1, false);
+        int cnt2 = LiftIt(grid, grid[0].Length, grid.Length, null, true);
+        return (cnt1, cnt2);
+    }
+
+    private int LiftIt(char[][] grid, int width, int height, int? maxrounds, bool remove) {
+        ReadOnlySpan<(int, int)> dirs = [(-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1)];
+        int cnt = 0, round = 1;
+        for (bool removed = true; removed && (maxrounds == null || round <= maxrounds); round++) {
+            removed = false;
+            for (int y = 0; y < height; y++) {
+                for (int x = 0; x < width; x++) {
+                    if (grid[y][x] != '.') {
+                        var nrolls = 0;
+                        foreach (var (dx, dy) in dirs) {
+                            nrolls += (uint)(x + dx) < width && (uint)(y + dy) < height && grid[y + dy][x + dx] != '.' ? 1 : 0;
+                        }
+                        if (nrolls < 4) {
+                            if (remove) { grid[y][x] = '.'; removed = true; }
+                            cnt++;
+                        }
+                    }
+                }
+            }
+        }
+        return cnt;
+    }
+}
