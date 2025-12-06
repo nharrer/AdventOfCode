@@ -1,4 +1,7 @@
 {
     "_debug.console.fontSize": 16,
-    "_debug.console.lineHeight": 10.0
+    "_debug.console.lineHeight": 10.0,
+    "[plaintext]": {
+        "files.trimTrailingWhitespace": false
+    }
 }

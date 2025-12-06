@@ -8,7 +8,9 @@ namespace AdventOfCode {
         private readonly string _inputPath;
 
         protected string _input = "";
+        protected string _inputRaw = "";
         protected string[] _inputLines = [];
+        protected string[] _inputLinesRaw = [];
 
         protected Solvable(string inputPath) {
             _inputPath = inputPath;
@@ -18,7 +20,9 @@ namespace AdventOfCode {
             if (!File.Exists(_inputPath)) {
                 throw new FileNotFoundException($"Input file not found: {_inputPath}");
             }
-            _input = File.ReadAllText(_inputPath).Trim();
+            _inputRaw = File.ReadAllText(_inputPath);
+            _input = _inputRaw.Trim();
+            _inputLinesRaw = _inputRaw.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
             _inputLines = _input.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
         }
 
