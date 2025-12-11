@@ -12,7 +12,7 @@
                 "--day",
                 "11",
                 "--variant",
-                "default",
+                "export",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

@@ -9,3535 +9,4124 @@
     "nodes": [
       {
         "data": {
-          "id": "zlo"
+          "id": "zlo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cwi"
+          "id": "cwi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "agf"
+          "id": "agf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uqn"
+          "id": "uqn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "saf"
+          "id": "saf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qgs"
+          "id": "qgs",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pfp"
+          "id": "pfp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qmv"
+          "id": "qmv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kaj"
+          "id": "kaj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kkh"
+          "id": "kkh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vxj"
+          "id": "vxj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bpy"
+          "id": "bpy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ovx"
+          "id": "ovx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nav"
+          "id": "nav",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vnz"
+          "id": "vnz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mkk"
+          "id": "mkk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uby"
+          "id": "uby",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ior"
+          "id": "ior",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qxu"
+          "id": "qxu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lmc"
+          "id": "lmc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "you"
+          "id": "you",
+          "color": "you"
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zhj"
+          "id": "zhj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gzu"
+          "id": "gzu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nbd"
+          "id": "nbd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zcj"
+          "id": "zcj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zjk"
+          "id": "zjk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cah"
+          "id": "cah",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "inz"
+          "id": "inz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ewl"
+          "id": "ewl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "swp"
+          "id": "swp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nnm"
+          "id": "nnm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "utd"
+          "id": "utd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uce"
+          "id": "uce",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xbq"
+          "id": "xbq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tej"
+          "id": "tej",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gmc"
+          "id": "gmc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mqs"
+          "id": "mqs",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "geh"
+          "id": "geh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "enn"
+          "id": "enn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lwg"
+          "id": "lwg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "utk"
+          "id": "utk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cve"
+          "id": "cve",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jez"
+          "id": "jez",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ptx"
+          "id": "ptx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "oez"
+          "id": "oez",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ssu"
+          "id": "ssu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "boi"
+          "id": "boi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "air"
+          "id": "air",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bga"
+          "id": "bga",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xvu"
+          "id": "xvu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tza"
+          "id": "tza",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bji"
+          "id": "bji",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gdv"
+          "id": "gdv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zdi"
+          "id": "zdi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vly"
+          "id": "vly",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jvg"
+          "id": "jvg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "txr"
+          "id": "txr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "sqv"
+          "id": "sqv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jxp"
+          "id": "jxp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ivc"
+          "id": "ivc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "phr"
+          "id": "phr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gwh"
+          "id": "gwh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "era"
+          "id": "era",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zxc"
+          "id": "zxc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aej"
+          "id": "aej",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zpj"
+          "id": "zpj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lfw"
+          "id": "lfw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nis"
+          "id": "nis",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "oas"
+          "id": "oas",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "agv"
+          "id": "agv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "etj"
+          "id": "etj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fic"
+          "id": "fic",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hmy"
+          "id": "hmy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "exu"
+          "id": "exu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vkl"
+          "id": "vkl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "sch"
+          "id": "sch",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lhk"
+          "id": "lhk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zrr"
+          "id": "zrr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dnr"
+          "id": "dnr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vcq"
+          "id": "vcq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yie"
+          "id": "yie",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nzh"
+          "id": "nzh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iiq"
+          "id": "iiq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fxh"
+          "id": "fxh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zps"
+          "id": "zps",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mdf"
+          "id": "mdf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ygg"
+          "id": "ygg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kfm"
+          "id": "kfm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jpj"
+          "id": "jpj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kkr"
+          "id": "kkr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uiy"
+          "id": "uiy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ntx"
+          "id": "ntx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ouy"
+          "id": "ouy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gwt"
+          "id": "gwt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ueb"
+          "id": "ueb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "abr"
+          "id": "abr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "huv"
+          "id": "huv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "scj"
+          "id": "scj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mjj"
+          "id": "mjj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ewv"
+          "id": "ewv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ndv"
+          "id": "ndv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nao"
+          "id": "nao",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dub"
+          "id": "dub",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rsf"
+          "id": "rsf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mhf"
+          "id": "mhf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ohl"
+          "id": "ohl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qeb"
+          "id": "qeb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mbz"
+          "id": "mbz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "psz"
+          "id": "psz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "itd"
+          "id": "itd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ygx"
+          "id": "ygx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xlq"
+          "id": "xlq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bpv"
+          "id": "bpv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wxl"
+          "id": "wxl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jig"
+          "id": "jig",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hkm"
+          "id": "hkm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wzv"
+          "id": "wzv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fob"
+          "id": "fob",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cwh"
+          "id": "cwh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ulh"
+          "id": "ulh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ldl"
+          "id": "ldl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "whl"
+          "id": "whl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qja"
+          "id": "qja",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ztw"
+          "id": "ztw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mrp"
+          "id": "mrp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gnp"
+          "id": "gnp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "taz"
+          "id": "taz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "odw"
+          "id": "odw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "irv"
+          "id": "irv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xmm"
+          "id": "xmm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "azj"
+          "id": "azj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aqy"
+          "id": "aqy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qju"
+          "id": "qju",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fmq"
+          "id": "fmq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uit"
+          "id": "uit",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "txx"
+          "id": "txx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xoc"
+          "id": "xoc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yjk"
+          "id": "yjk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cby"
+          "id": "cby",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "edj"
+          "id": "edj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ica"
+          "id": "ica",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xah"
+          "id": "xah",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iyi"
+          "id": "iyi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rit"
+          "id": "rit",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mah"
+          "id": "mah",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hun"
+          "id": "hun",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mhd"
+          "id": "mhd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "inq"
+          "id": "inq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pvu"
+          "id": "pvu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mhx"
+          "id": "mhx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rzy"
+          "id": "rzy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uyz"
+          "id": "uyz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wzc"
+          "id": "wzc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "taw"
+          "id": "taw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qor"
+          "id": "qor",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mzz"
+          "id": "mzz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rya"
+          "id": "rya",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vsv"
+          "id": "vsv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zhp"
+          "id": "zhp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ian"
+          "id": "ian",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jip"
+          "id": "jip",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mzb"
+          "id": "mzb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zcy"
+          "id": "zcy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cwn"
+          "id": "cwn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nmk"
+          "id": "nmk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uri"
+          "id": "uri",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ndq"
+          "id": "ndq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qck"
+          "id": "qck",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nvg"
+          "id": "nvg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lft"
+          "id": "lft",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xbn"
+          "id": "xbn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "btv"
+          "id": "btv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lvg"
+          "id": "lvg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "har"
+          "id": "har",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nqw"
+          "id": "nqw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "epe"
+          "id": "epe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hin"
+          "id": "hin",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tyj"
+          "id": "tyj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qsh"
+          "id": "qsh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "agd"
+          "id": "agd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mix"
+          "id": "mix",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gyr"
+          "id": "gyr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rhg"
+          "id": "rhg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "evu"
+          "id": "evu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kvv"
+          "id": "kvv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lhd"
+          "id": "lhd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gfd"
+          "id": "gfd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ehp"
+          "id": "ehp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "shi"
+          "id": "shi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wwq"
+          "id": "wwq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vdw"
+          "id": "vdw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ure"
+          "id": "ure",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bvr"
+          "id": "bvr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yrl"
+          "id": "yrl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ekh"
+          "id": "ekh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "sku"
+          "id": "sku",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wru"
+          "id": "wru",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "flj"
+          "id": "flj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wka"
+          "id": "wka",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kxt"
+          "id": "kxt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zco"
+          "id": "zco",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "roc"
+          "id": "roc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hvl"
+          "id": "hvl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gte"
+          "id": "gte",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vrh"
+          "id": "vrh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nsa"
+          "id": "nsa",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "khm"
+          "id": "khm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "san"
+          "id": "san",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xfy"
+          "id": "xfy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "afe"
+          "id": "afe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jsc"
+          "id": "jsc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rab"
+          "id": "rab",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zly"
+          "id": "zly",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xsb"
+          "id": "xsb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jgo"
+          "id": "jgo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zil"
+          "id": "zil",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ieb"
+          "id": "ieb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tuh"
+          "id": "tuh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dfh"
+          "id": "dfh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aar"
+          "id": "aar",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ebw"
+          "id": "ebw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ztr"
+          "id": "ztr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bzq"
+          "id": "bzq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ukj"
+          "id": "ukj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zqs"
+          "id": "zqs",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pos"
+          "id": "pos",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cll"
+          "id": "cll",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fft"
+          "id": "fft",
+          "color": "fft"
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uah"
+          "id": "uah",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zdr"
+          "id": "zdr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vcl"
+          "id": "vcl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lpt"
+          "id": "lpt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uvq"
+          "id": "uvq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "umf"
+          "id": "umf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tql"
+          "id": "tql",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cbb"
+          "id": "cbb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hpp"
+          "id": "hpp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "sol"
+          "id": "sol",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wcp"
+          "id": "wcp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hjc"
+          "id": "hjc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "krm"
+          "id": "krm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qge"
+          "id": "qge",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "sor"
+          "id": "sor",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ngf"
+          "id": "ngf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ipm"
+          "id": "ipm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jnj"
+          "id": "jnj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "trx"
+          "id": "trx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aym"
+          "id": "aym",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lxv"
+          "id": "lxv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tox"
+          "id": "tox",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ldx"
+          "id": "ldx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mrr"
+          "id": "mrr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kmi"
+          "id": "kmi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kxq"
+          "id": "kxq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ekb"
+          "id": "ekb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qij"
+          "id": "qij",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bzj"
+          "id": "bzj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kni"
+          "id": "kni",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xuy"
+          "id": "xuy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lju"
+          "id": "lju",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aim"
+          "id": "aim",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "joj"
+          "id": "joj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dlr"
+          "id": "dlr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iwd"
+          "id": "iwd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cni"
+          "id": "cni",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bug"
+          "id": "bug",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nlq"
+          "id": "nlq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yvl"
+          "id": "yvl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ggi"
+          "id": "ggi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fvo"
+          "id": "fvo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dea"
+          "id": "dea",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "arg"
+          "id": "arg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "otc"
+          "id": "otc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "okq"
+          "id": "okq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nig"
+          "id": "nig",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zxd"
+          "id": "zxd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jfh"
+          "id": "jfh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ytl"
+          "id": "ytl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wdz"
+          "id": "wdz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zmv"
+          "id": "zmv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gzg"
+          "id": "gzg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uaa"
+          "id": "uaa",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nse"
+          "id": "nse",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "agw"
+          "id": "agw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ngl"
+          "id": "ngl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "azc"
+          "id": "azc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yef"
+          "id": "yef",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ayw"
+          "id": "ayw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wwz"
+          "id": "wwz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hny"
+          "id": "hny",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xfu"
+          "id": "xfu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ihk"
+          "id": "ihk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "egh"
+          "id": "egh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wrt"
+          "id": "wrt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "unu"
+          "id": "unu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kyd"
+          "id": "kyd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yfw"
+          "id": "yfw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yog"
+          "id": "yog",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vno"
+          "id": "vno",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ylp"
+          "id": "ylp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "adb"
+          "id": "adb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bqw"
+          "id": "bqw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hpc"
+          "id": "hpc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aqe"
+          "id": "aqe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lfa"
+          "id": "lfa",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "usl"
+          "id": "usl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pbg"
+          "id": "pbg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ddk"
+          "id": "ddk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "plv"
+          "id": "plv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "skj"
+          "id": "skj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lxy"
+          "id": "lxy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "trw"
+          "id": "trw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "skw"
+          "id": "skw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hut"
+          "id": "hut",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pju"
+          "id": "pju",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mng"
+          "id": "mng",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xss"
+          "id": "xss",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nna"
+          "id": "nna",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "euw"
+          "id": "euw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "glz"
+          "id": "glz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "drb"
+          "id": "drb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "csl"
+          "id": "csl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ake"
+          "id": "ake",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "axm"
+          "id": "axm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tnx"
+          "id": "tnx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aga"
+          "id": "aga",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ikt"
+          "id": "ikt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zkn"
+          "id": "zkn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uht"
+          "id": "uht",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fvq"
+          "id": "fvq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rbb"
+          "id": "rbb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tgs"
+          "id": "tgs",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uqt"
+          "id": "uqt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fhu"
+          "id": "fhu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ndb"
+          "id": "ndb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "sub"
+          "id": "sub",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qld"
+          "id": "qld",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gks"
+          "id": "gks",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qkm"
+          "id": "qkm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bbw"
+          "id": "bbw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bqe"
+          "id": "bqe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rtq"
+          "id": "rtq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vgq"
+          "id": "vgq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ghy"
+          "id": "ghy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wfh"
+          "id": "wfh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "oar"
+          "id": "oar",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xrh"
+          "id": "xrh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bzo"
+          "id": "bzo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fya"
+          "id": "fya",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ufo"
+          "id": "ufo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yrb"
+          "id": "yrb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tpe"
+          "id": "tpe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wxr"
+          "id": "wxr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kkx"
+          "id": "kkx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "heu"
+          "id": "heu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vjm"
+          "id": "vjm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tyi"
+          "id": "tyi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cpj"
+          "id": "cpj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ozm"
+          "id": "ozm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nsc"
+          "id": "nsc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tfu"
+          "id": "tfu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vkr"
+          "id": "vkr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xmz"
+          "id": "xmz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dvc"
+          "id": "dvc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lxb"
+          "id": "lxb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xcj"
+          "id": "xcj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "foc"
+          "id": "foc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ihe"
+          "id": "ihe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ljj"
+          "id": "ljj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qup"
+          "id": "qup",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lvo"
+          "id": "lvo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jal"
+          "id": "jal",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kmy"
+          "id": "kmy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rjt"
+          "id": "rjt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mzc"
+          "id": "mzc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xhz"
+          "id": "xhz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "egf"
+          "id": "egf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zai"
+          "id": "zai",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gzk"
+          "id": "gzk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dcx"
+          "id": "dcx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nha"
+          "id": "nha",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xaj"
+          "id": "xaj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zsg"
+          "id": "zsg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cbd"
+          "id": "cbd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "esm"
+          "id": "esm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "svr"
+          "id": "svr",
+          "color": "svr"
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jqq"
+          "id": "jqq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gbw"
+          "id": "gbw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "snm"
+          "id": "snm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dgh"
+          "id": "dgh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ged"
+          "id": "ged",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ixn"
+          "id": "ixn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yrg"
+          "id": "yrg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bjz"
+          "id": "bjz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jof"
+          "id": "jof",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "llx"
+          "id": "llx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nqi"
+          "id": "nqi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "znc"
+          "id": "znc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xsj"
+          "id": "xsj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jvv"
+          "id": "jvv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "eiu"
+          "id": "eiu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gcd"
+          "id": "gcd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wwp"
+          "id": "wwp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "oyh"
+          "id": "oyh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "geb"
+          "id": "geb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hah"
+          "id": "hah",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tsx"
+          "id": "tsx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zho"
+          "id": "zho",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "thc"
+          "id": "thc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mmm"
+          "id": "mmm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tsa"
+          "id": "tsa",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dns"
+          "id": "dns",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mai"
+          "id": "mai",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vhr"
+          "id": "vhr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uzd"
+          "id": "uzd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dac"
+          "id": "dac",
+          "color": "dac"
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "epj"
+          "id": "epj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vvu"
+          "id": "vvu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yrx"
+          "id": "yrx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iql"
+          "id": "iql",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ftz"
+          "id": "ftz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fkg"
+          "id": "fkg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vuq"
+          "id": "vuq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mdt"
+          "id": "mdt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bhw"
+          "id": "bhw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ktw"
+          "id": "ktw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wyc"
+          "id": "wyc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rwb"
+          "id": "rwb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gbl"
+          "id": "gbl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "was"
+          "id": "was",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vom"
+          "id": "vom",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ujt"
+          "id": "ujt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uen"
+          "id": "uen",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hhk"
+          "id": "hhk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zym"
+          "id": "zym",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ybw"
+          "id": "ybw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jvi"
+          "id": "jvi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jyw"
+          "id": "jyw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lek"
+          "id": "lek",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jsm"
+          "id": "jsm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hzt"
+          "id": "hzt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "svu"
+          "id": "svu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vab"
+          "id": "vab",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xcb"
+          "id": "xcb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vkz"
+          "id": "vkz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "soe"
+          "id": "soe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fwz"
+          "id": "fwz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pus"
+          "id": "pus",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "onu"
+          "id": "onu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dll"
+          "id": "dll",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lcm"
+          "id": "lcm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rrv"
+          "id": "rrv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jup"
+          "id": "jup",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ymp"
+          "id": "ymp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "eau"
+          "id": "eau",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lzz"
+          "id": "lzz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cxb"
+          "id": "cxb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "urh"
+          "id": "urh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rjz"
+          "id": "rjz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "byz"
+          "id": "byz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zna"
+          "id": "zna",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mgp"
+          "id": "mgp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lfm"
+          "id": "lfm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jht"
+          "id": "jht",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yfm"
+          "id": "yfm",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vxu"
+          "id": "vxu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "evh"
+          "id": "evh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ven"
+          "id": "ven",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zpr"
+          "id": "zpr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "trg"
+          "id": "trg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hvt"
+          "id": "hvt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uiz"
+          "id": "uiz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ers"
+          "id": "ers",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "stz"
+          "id": "stz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zmf"
+          "id": "zmf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ghx"
+          "id": "ghx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hkt"
+          "id": "hkt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "azx"
+          "id": "azx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gft"
+          "id": "gft",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gzb"
+          "id": "gzb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pwz"
+          "id": "pwz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "oya"
+          "id": "oya",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "aqt"
+          "id": "aqt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lfk"
+          "id": "lfk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "htv"
+          "id": "htv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "npk"
+          "id": "npk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "smb"
+          "id": "smb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kum"
+          "id": "kum",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jrq"
+          "id": "jrq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nio"
+          "id": "nio",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iwe"
+          "id": "iwe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "soc"
+          "id": "soc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qef"
+          "id": "qef",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wam"
+          "id": "wam",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xkl"
+          "id": "xkl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fok"
+          "id": "fok",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gss"
+          "id": "gss",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rpz"
+          "id": "rpz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qxa"
+          "id": "qxa",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vcy"
+          "id": "vcy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qhx"
+          "id": "qhx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mqr"
+          "id": "mqr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lvn"
+          "id": "lvn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xbx"
+          "id": "xbx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jwe"
+          "id": "jwe",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gvx"
+          "id": "gvx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ljo"
+          "id": "ljo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rzd"
+          "id": "rzd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ixv"
+          "id": "ixv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cne"
+          "id": "cne",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pcr"
+          "id": "pcr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uch"
+          "id": "uch",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "few"
+          "id": "few",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "scs"
+          "id": "scs",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "eng"
+          "id": "eng",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cvt"
+          "id": "cvt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "zur"
+          "id": "zur",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yar"
+          "id": "yar",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qmn"
+          "id": "qmn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tfc"
+          "id": "tfc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iio"
+          "id": "iio",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xtg"
+          "id": "xtg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nzq"
+          "id": "nzq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gdg"
+          "id": "gdg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vdg"
+          "id": "vdg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jyv"
+          "id": "jyv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ucd"
+          "id": "ucd",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qib"
+          "id": "qib",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uyc"
+          "id": "uyc",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ubw"
+          "id": "ubw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "htz"
+          "id": "htz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ldb"
+          "id": "ldb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nvk"
+          "id": "nvk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "seo"
+          "id": "seo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "qul"
+          "id": "qul",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mik"
+          "id": "mik",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "liq"
+          "id": "liq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "plb"
+          "id": "plb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pho"
+          "id": "pho",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ezv"
+          "id": "ezv",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "pne"
+          "id": "pne",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ymg"
+          "id": "ymg",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "srq"
+          "id": "srq",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jcf"
+          "id": "jcf",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jrs"
+          "id": "jrs",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "xfj"
+          "id": "xfj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "jmh"
+          "id": "jmh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ttn"
+          "id": "ttn",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "nuh"
+          "id": "nuh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bnt"
+          "id": "bnt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cru"
+          "id": "cru",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "tmi"
+          "id": "tmi",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gzh"
+          "id": "gzh",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vgj"
+          "id": "vgj",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "weo"
+          "id": "weo",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "uti"
+          "id": "uti",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gir"
+          "id": "gir",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hbl"
+          "id": "hbl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yfl"
+          "id": "yfl",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mts"
+          "id": "mts",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cld"
+          "id": "cld",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lah"
+          "id": "lah",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "kpy"
+          "id": "kpy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "yka"
+          "id": "yka",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ary"
+          "id": "ary",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iid"
+          "id": "iid",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gjx"
+          "id": "gjx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "gxp"
+          "id": "gxp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "cxk"
+          "id": "cxk",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "biu"
+          "id": "biu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dnz"
+          "id": "dnz",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "rzt"
+          "id": "rzt",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mis"
+          "id": "mis",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "fff"
+          "id": "fff",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "eqb"
+          "id": "eqb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "dry"
+          "id": "dry",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "lct"
+          "id": "lct",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wlp"
+          "id": "wlp",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "bra"
+          "id": "bra",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "sjx"
+          "id": "sjx",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "mow"
+          "id": "mow",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "quu"
+          "id": "quu",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "vdy"
+          "id": "vdy",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "wdb"
+          "id": "wdb",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "epr"
+          "id": "epr",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "ugw"
+          "id": "ugw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "hij"
+          "id": "hij",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "iqw"
+          "id": "iqw",
+          "color": ""
         },
         "group": "nodes"
       },
       {
         "data": {
-          "id": "out"
+          "id": "out",
+          "color": "out"
         },
         "group": "nodes"
       }
