@@ -1,6 +1,6 @@
 {
-    "debug.console.fontSize": 14,
-    "debug.console.lineHeight": 12.0,
+    "debug.console.fontSize": 13,
+    "debug.console.lineHeight": 13.0,
     "debug.console.collapseIdenticalLines": false,
     "editor.codeLens": false,
     "[plaintext]": {
