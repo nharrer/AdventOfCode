@@ -6,13 +6,11 @@ public class Year2025_Day11(string inputPath) : Solvable($"{inputPath}/input") {
         var devices = _inputLines.Select(line => line.Split([':', ' '], StringSplitOptions.RemoveEmptyEntries))
                                  .ToDictionary(parts => parts[0], parts => parts.Skip(1).ToList());
         devices["out"] = [];
-        var cnt1 = CountAllPaths(devices, "you", "out");
-        var cnt2 = CountAllPaths(devices, "svr", "fft") * CountAllPaths(devices, "fft", "dac") * CountAllPaths(devices, "dac", "out")
-                 + CountAllPaths(devices, "svr", "dac") * CountAllPaths(devices, "dac", "fft") * CountAllPaths(devices, "fft", "out");
+        var cnt1 = CountPaths(devices, "you", "out", []);
+        var cnt2 = CountPaths(devices, "svr", "fft", []) * CountPaths(devices, "fft", "dac", []) * CountPaths(devices, "dac", "out", [])
+                 + CountPaths(devices, "svr", "dac", []) * CountPaths(devices, "dac", "fft", []) * CountPaths(devices, "fft", "out", []);
         return (cnt1, cnt2);
     }
-
-    private long CountAllPaths(Dictionary<string, List<string>> devices, string start, string end) => CountPaths(devices, start, end, []);
 
     private long CountPaths(Dictionary<string, List<string>> devices, string current, string end, Dictionary<string, long> memo) {
         if (current == end) {
