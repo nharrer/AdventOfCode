@@ -12,9 +12,7 @@ public class Year2025_Day11(string inputPath) : Solvable($"{inputPath}/input") {
         return (cnt1, cnt2);
     }
 
-    private long CountAllPaths(Dictionary<string, List<string>> devices, string start, string end) {
-        return CountPaths(devices, start, end, []);
-    }
+    private long CountAllPaths(Dictionary<string, List<string>> devices, string start, string end) => CountPaths(devices, start, end, []);
 
     private long CountPaths(Dictionary<string, List<string>> devices, string current, string end, Dictionary<string, long> memo) {
         if (current == end) {
