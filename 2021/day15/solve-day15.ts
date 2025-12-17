@@ -41,7 +41,7 @@ const solve = (part: string, field: number[][]) => {
 
     const solution = solver.calculateFor(0).shortestPathTo(width * height - 1);
     solution.shift(); // ignore startnode
-    const solution1 = solution.map(node => field[Math.floor(node / width)][node % width]).reduce((s, v) => s + v, 0);
+    const solution1 = solution.map((node: number) => field[Math.floor(node / width)][node % width]).reduce((s:number, v:number) => s + v, 0);
     console.log(`Part ${part}: ${solution1}`);
 }
 
