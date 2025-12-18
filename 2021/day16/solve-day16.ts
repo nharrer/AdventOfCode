@@ -70,13 +70,13 @@ class Packet {
 
 class Literal extends Packet {
     constructor(
-        public version: number,
-        public type: Type,
+        public override version: number,
+        public override type: Type,
         public value = 0
     ) {
         super(version, type);
     }
-    public getValue(): number {
+    public override getValue(): number {
         return this.value;
     }
 
@@ -93,16 +93,16 @@ class Literal extends Packet {
 
 class Operator extends Packet {
     constructor(
-        public version: number,
-        public type: Type,
+        public override version: number,
+        public override type: Type,
         public packets: Array<Packet> = []
     ) {
         super(version, type);
     }
-    public sumVersion(): number {
+    public override sumVersion(): number {
         return this.version + this.packets.reduce((sum, p) => sum + p.sumVersion(), 0);
     }
-    public getValue(): number {
+    public override getValue(): number {
         if (this.type === Type.Sum) {
             return this.packets.reduce((result, p) => result + p.getValue(), 0);
         } else if (this.type === Type.Product) {
