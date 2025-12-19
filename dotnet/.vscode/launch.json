@@ -8,9 +8,9 @@
             "program": "${workspaceFolder}/bin/Debug/net10.0/AdventOfCode.dll",
             "args": [
                 "--year",
-                "2025",
+                "2021",
                 "--day",
-                "12",
+                "19",
                 "--variant",
                 "default",
             ],
