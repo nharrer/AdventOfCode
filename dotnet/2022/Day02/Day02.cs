@@ -4,8 +4,8 @@ public class Year2022_Day02(string inputPath) : Solvable($"{inputPath}/input") {
     // Note: 0 = Rock, 1 = Paper, 2 = Scissors
     public override (object, object) Solve() {
         var pairs = _inputLines.Select(line => line.Split(' ')).Select(parts => (parts[0][0] - 'A', parts[1][0] - 'X'));
-        var part1 = pairs.Select(p => Score(p.Item1, p.Item2)).Sum();
-        var part2 = pairs.Select(p => Score(p.Item1, ChooseMove(p.Item1, p.Item2))).Sum();
+        var part1 = pairs.Sum(p => Score(p.Item1, p.Item2));
+        var part2 = pairs.Sum(p => Score(p.Item1, ChooseMove(p.Item1, p.Item2)));
         return (part1, part2);
     }
 
