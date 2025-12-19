@@ -11,6 +11,7 @@
     "[python]": {
         "editor.formatOnSave": true,
     },
+    "debug.console.collapseIdenticalLines": false,
     "xpython.analysis.typeCheckingMode": "strict",
     "xdebug.console.fontFamily": "'Cascadia Code Light'",
     "xdebug.console.fontSize": 6,
