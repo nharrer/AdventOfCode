@@ -13,7 +13,28 @@
             "runtimeExecutable": "/home/norbert/.deno/bin/deno",
             "runtimeArgs": [
                 "run"
-            ]
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "C++: Build and Debug Active File",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build active C++ file"
         },
         {
             "name": "Python: Current File",
