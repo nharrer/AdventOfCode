@@ -82,10 +82,6 @@ fn main() {
             25 => year2024::day25::solve,
             _ => panic!("Day {} is not implemented yet for year {}!", day, year),
         },
-        2025 => match day {
-            1 => year2025::day01::solve,
-            _ => panic!("Day {} is not implemented yet for year {}!", day, year),
-        }
         _ => panic!("Year {} is not implemented yet!", year),
     };
 
