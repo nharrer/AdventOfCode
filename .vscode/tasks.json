@@ -6,7 +6,8 @@
 			"type": "shell",
 			"command": "g++",
 			"args": [
-                "-O2",
+                // "-O2",
+                "-fsanitize=signed-integer-overflow",
 				"-g",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}",
