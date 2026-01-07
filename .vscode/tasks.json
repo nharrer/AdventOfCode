@@ -6,6 +6,7 @@
 			"type": "shell",
 			"command": "g++",
 			"args": [
+                "-O2",
 				"-g",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}",

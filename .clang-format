@@ -1,4 +1,4 @@
-BasedOnStyle: LLVM
+BasedOnStyle: Google
 ColumnLimit: 0
 IndentWidth: 4
 AllowShortBlocksOnASingleLine: false
