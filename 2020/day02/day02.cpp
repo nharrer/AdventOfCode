@@ -1,6 +1,5 @@
 #include <fstream>
-#include <iostream>
-#include <regex>
+#include <cstdio>
 
 #include "../../cpp/startup.h"
 
@@ -9,16 +8,11 @@
 SolutionType solve() {
     std::ifstream infile(FILE);
     std::string line;
-    std::regex pattern("(\\d+)-(\\d+) (.): (.+)");
-
     int sol1 = 0, sol2 = 0;
     while (std::getline(infile, line)) {
-        std::smatch match;
-        if (std::regex_search(line, match, pattern)) {
-            auto min = std::stoi(match[1]);
-            auto max = std::stoi(match[2]);
-            char letter = match[3].str()[0];
-            std::string password = match[4];
+        int min = 0, max = 0; char letter = 0; char pwdbuf[1024];
+        if (std::sscanf(line.c_str(), "%d-%d %c: %1023s", &min, &max, &letter, pwdbuf) == 4) {
+            std::string password = pwdbuf;
 
             int count = std::count(password.begin(), password.end(), letter);
             if (count >= min && count <= max) {
