@@ -38,11 +38,15 @@
         },
         {
             "name": "Python: Current File",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "cwd": "${fileDirname}",
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "args": [
+                "--recompile"
+            ],
             "justMyCode": true
         },
         {

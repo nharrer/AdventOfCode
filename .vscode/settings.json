@@ -8,8 +8,13 @@
     "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
     "typescript.inlayHints.variableTypes.enabled": false,
     "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+    "black-formatter.args": [
+        "--skip-string-normalization",
+        "--line-length=140",
+        "--verbose"
+    ],
     "[python]": {
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
     },
     "debug.console.collapseIdenticalLines": false,
     "xpython.analysis.typeCheckingMode": "strict",

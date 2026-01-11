@@ -9,3 +9,6 @@ inline-quotes = "single"
 
 [tool.ruff.format]
 quote-style = "single"
+
+[tool.black]
+skip-string-normalization = true
