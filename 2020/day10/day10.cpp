@@ -1,8 +1,6 @@
 #include <fstream>
-#include <iostream>
-#include <string>
-#include <vector>
 #include <set>
+#include <string>
 
 #include "../../cpp/startup.h"
 

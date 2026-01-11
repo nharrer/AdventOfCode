@@ -1,8 +1,7 @@
-#include "../../cpp/startup.h"
-
 #include <fstream>
-#include <iostream>
 #include <vector>
+
+#include "../../cpp/startup.h"
 
 #define FILE "input.txt"
 
