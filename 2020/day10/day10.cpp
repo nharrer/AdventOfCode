@@ -50,8 +50,10 @@ SolutionType solve() {
         adapters.insert(j);
     }
 
+    int max = *adapters.rbegin() + 3;
+    adapters.insert(max);
+
     int cnt1 = 0, cnt3 = 0;
-    int max = *adapters.rbegin();
     std::map<int, LargeNumber> memo;
     find(0, max, adapters, cnt1, cnt3, memo, true);
     LargeNumber sol1 = cnt1 * cnt3;
