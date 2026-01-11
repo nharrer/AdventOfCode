@@ -34,7 +34,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build active C++ file"
+            "preLaunchTask": "build_clang++"
         },
         {
             "name": "Python: Current File",

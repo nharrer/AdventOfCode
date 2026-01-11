@@ -1,23 +1,42 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"label": "Build active C++ file",
-			"type": "shell",
-			"command": "g++",
-			"args": [
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_g++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
                 // "-O2",
                 "-std=c++20",
-                "-fsanitize=signed-integer-overflow",
-				"-g",
-				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}",
-				"${file}"
-			],
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build"
-		}
-	]
+                "-fsanitize=undefined",
+                "-g",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "${file}"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build_clang++",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                // "-O2",
+                "-std=c++20",
+                "-fsanitize=undefined,unsigned-integer-overflow",
+                "-Og",
+                "-g",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "${file}"
+            ],
+            "problemMatcher": [
+                "$clang"
+            ],
+            "group": "build"
+        }
+    ]
 }

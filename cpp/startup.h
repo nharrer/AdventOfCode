@@ -5,7 +5,7 @@
 #include <map>
 #include <variant>
 
-using SolutionType = std::variant<std::pair<std::string, std::string>, std::pair<int, int>, std::pair<long, long>>;
+using SolutionType = std::variant<std::pair<std::string, std::string>, std::pair<int, int>, std::pair<int64_t, int64_t>, std::pair<uint64_t, uint64_t>>;
 
 static std::map<std::string, std::chrono::high_resolution_clock::time_point> start_times;
 
@@ -46,8 +46,12 @@ int main() {
         auto res = std::get<std::pair<int, int>>(sol);
         sol1 = std::to_string(res.first);
         sol2 = std::to_string(res.second);
-    } else if (std::holds_alternative<std::pair<long, long>>(sol)) {
-        auto res = std::get<std::pair<long, long>>(sol);
+    } else if (std::holds_alternative<std::pair<int64_t, int64_t>>(sol)) {
+        auto res = std::get<std::pair<int64_t, int64_t>>(sol);
+        sol1 = std::to_string(res.first);
+        sol2 = std::to_string(res.second);
+    } else if (std::holds_alternative<std::pair<uint64_t, uint64_t>>(sol)) {
+        auto res = std::get<std::pair<uint64_t, uint64_t>>(sol);
         sol1 = std::to_string(res.first);
         sol2 = std::to_string(res.second);
     }
