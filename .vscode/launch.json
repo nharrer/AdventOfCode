@@ -45,7 +45,7 @@
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
             "args": [
-                "--recompile"
+                // "--recompile"
             ],
             "justMyCode": true
         },
