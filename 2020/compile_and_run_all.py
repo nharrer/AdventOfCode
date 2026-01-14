@@ -30,6 +30,7 @@ EXPECTED = {
     'day11': (2329, 2138),
     'day12': (882, 28885),
     'day13': (3789, 667437230788118),
+    'day14': (11926135976176, 4330547254348),
 }
 
 SKIP_DAYS_AFTER = None  # days above this number will be skipped
